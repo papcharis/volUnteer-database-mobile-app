@@ -15,11 +15,10 @@
 <body>
   <?php
   $va = $_GET["ActName"];
-  $conn = new mysqli("localhost", "root", "patzaria4ever", "mydb");
-  // Check connection
-  if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
+  
+  include 'db_connection.php';
+  $conn = open_con();
+
   $sql = "SELECT * FROM voluntary_activity LEFT JOIN Organizer_Profile ON Organizer_Profile.organizer_ID=voluntary_activity.organizer_ID
           WHERE ActName = '$va'" ;
   $result = $conn->query($sql);

@@ -1,10 +1,7 @@
 <?php
 
-$conn = new mysqli("localhost", "root", "patzaria4ever", "mydb");
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+include 'db_connection.php';
+$conn = open_con();
 
 class Calendar {
 

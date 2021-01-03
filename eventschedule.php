@@ -1,11 +1,4 @@
 <!DOCTYPE html>
-<?php
-$conn = new mysqli("localhost", "root", "patzaria4ever", "mydb");
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-?>
 <html lang='en'>
 
 <head>
