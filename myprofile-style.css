@@ -135,12 +135,94 @@ mark {
   text-align: center;
   color: #544A4A;
 }
+
 .line-2 {
   border-top: 2px solid #A49E9E;
   width: 200px;
   position: absolute;
   left: calc(50% - 100px);
   top: 593px;
+}
+
+.username-text {
+  position: absolute;
+  width: 78px;
+  height: 18px;
+  left: 115px;
+  top: 398px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #544A4A;
+}
+
+.age-text{
+  position: absolute;
+  width: 78px;
+  height: 18px;
+  left: 115.11px;
+  top: 442.5px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #544A4A;
+}
+
+.shortBio-text{
+  position: absolute;
+  width: 226px;
+  height: 46px;
+  left: 113px;
+  top: 487px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #544A4A;
+}
+
+.phone-text{
+  position: absolute;
+  width: 93px;
+  height: 20px;
+  left: 117px;
+  top: 610px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+
+  color: #544A4A;
+}
+
+.email-text{
+  position: absolute;
+  width: 219px;
+  height: 25px;
+  left: 117px;
+  top: 663px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #544A4A;
+
 }
 
 .profile-icon-4 {

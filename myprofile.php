@@ -1,3 +1,31 @@
+<?php
+  session_start();
+
+  if(!isset($_SESSION['loggedin'])){
+    header('Location:login.html');
+    exit;
+  }
+
+  include 'db_connection.php';
+  $conn = open_con();
+
+  $stmt = $conn->prepare('SELECT First_Name,Last_Name,Email,Age,ShortBio,Phone FROM volunteer_profile WHERE username=?');
+  $stmt->bind_param('s',$_SESSION['username']);
+  $stmt->execute();
+  $stmt->store_result();
+  if($stmt->num_rows>0){
+    $stmt->bind_result($fname,$lname,$email,$age,$shortBio,$phone);
+    $stmt->fetch();
+  }
+  else{
+    echo "Shit Happens";
+  }
+
+  $stmt->close();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang='en'>
 
@@ -69,6 +97,12 @@
   <div class="profile-icon-5">
     <img src="./images/profile-icon-5.svg" alt="" />
   </div>
+  <div class="username-text"><?=$_SESSION['username']?></div>
+  <div class="age-text"><?=$age?></div>
+  <div class="shortBio-text"><?=$shortBio?></div>
+  <div class="phone-text"><?=$phone?></div>
+  <div class="email-text"><?=$email?></div>
+
 
 </body>
 
