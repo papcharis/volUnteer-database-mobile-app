@@ -29,9 +29,6 @@
   <div class="upcoming">
     <a href="./myevents.php">Up-coming</a>
   </div>
-  <div class="pending">
-    <a href="./myevents-pending.php">Pending</a>
-  </div>
   <div class="completed">
     <a href="./myevents-completed.php">Completed</a>
   </div>

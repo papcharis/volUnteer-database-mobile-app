@@ -72,23 +72,7 @@ mark {
   position: absolute;
   width: 133px;
   height: 34px;
-  left: calc(50% - 173px);
-  top: 183px;
-}
-
-.pending a {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #A49E9E;
-  text-decoration: none;
-  position: absolute;
-  width: 133px;
-  height: 34px;
-  left: calc(50% - 69px);
+  left: 27px;
   top: 183px;
 }
 
@@ -104,7 +88,7 @@ mark {
   position: absolute;
   width: 133px;
   height: 34px;
-  left: calc(50% + 40px);
+  left: 200px;
   top: 183px;
 }
 
@@ -115,7 +99,7 @@ mark {
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  left: calc(50% + 105px);
+  left: 265px;
   top: 212px;
 }
 
