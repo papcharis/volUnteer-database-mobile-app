@@ -42,7 +42,7 @@
     include 'db_connection.php';
     $conn = open_con();
 
-    find_myevents($conn);
+    find_myevents($conn, 'completed');
     $conn->close();
   ?>
 

@@ -34,7 +34,20 @@
   </div>
   <span class="dot"></span>
   <div class="line"></div>
-  <div class="rectangle"></div>
+
+
+  <?php
+
+
+    include 'find_myevents.php';
+    include 'db_connection.php';
+    $conn = open_con();
+
+    find_myevents($conn, 'upcoming');
+    $conn->close();
+  ?>
+
+  <!-- <div class="rectangle"></div>
   <div class="duration">
     <img src="./images/duration-small.svg" alt="" />
   </div>  <div class="role">
@@ -50,7 +63,7 @@
     <div class="more-2">
       <img src="./images/arrow-small.svg" alt="" />
     </div>
-  </a>
+  </a> -->
 
 </body>
 
