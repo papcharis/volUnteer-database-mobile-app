@@ -44,7 +44,7 @@ if ($stmt = $con->prepare('SELECT * FROM accounts WHERE username = ?')) {
         echo 'Could not prepare statement 1.5';
       }
 
-      header('Location: index.php');
+      header('Location: login.html');
       } else {
       // Something is wrong with the sql statement, check to make sure accounts table exists with all 3 fields.
       echo 'Could not prepare statement! 1';
