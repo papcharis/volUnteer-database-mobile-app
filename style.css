@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo-image {
+  position: absolute;
+  top: 295px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  position: absolute;
+  top: 435px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: Baloo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 76px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+mark {
+  color: #6B9C9C;
+  background: none;
+}
+
+.rectangle-1 {
+  position: absolute;
+  width: 250px;
+  height: 52.72px;
+  top: 556px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #000000;
+  border-radius: 21px;
+}
+
+.signup {
+  position: absolute;
+  width: 134px;
+  height: 32px;
+  left: 120px;
+  top: 546px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.rectangle-2 {
+  position: absolute;
+  width: 250px;
+  height: 52.72px;
+  top: 627px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #000000;
+  border-radius: 21px;
+}
+
+.login {
+  position: absolute;
+  width: 177px;
+  height: 20px;
+  left: 99px;
+  top: 619px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}

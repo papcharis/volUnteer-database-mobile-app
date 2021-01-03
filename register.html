@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>volUnteer</title>
+  <link rel="stylesheet" href="register_style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="logo-image">
+    <img src="./images/logo.png" alt="" />
+  </div>
+  <div class="logo">
+    <a href="./index.html">Vol<mark>U</mark>nteer</a>
+  </div>
+  <div class="register">
+    <img src="./images/register-icon.svg" alt="" />
+  </div>
+  <div class="header">
+    Sign <mark>U</mark>p as:</a>
+  </div>
+  <div class="volunteer">
+    <a href="./register.html">Volunteer</a>
+  </div>
+  <div class="organizer">
+    <a href="">Organizer</a>
+  </div>
+  <span class="dot"></span>
+  <div class="line"></div>
+  <div class="rectangle"></div>
+  <form action="register.php" method="post" autocomplete="off">
+    <div class="first_name">
+      <label for="first_name">First name:</label><br>
+      <input type="text" name="first_name" id="first_name" required>
+    </div>
+    <div class="last_name">
+      <label for="last_name">Last name:</label><br>
+      <input type="text" name="last_name" id="last_name" required>
+    </div>
+    <div class="email">
+      <label for="email">Email:</label><br>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div class="username">
+      <label for="username">Username:</label><br>
+      <input type="text" name="username" id="username" required>
+    </div>
+    <div class="username-disc">
+      Your volUnteer username may contain characters, numbers and symbols
+    </div>
+    <div class="password">
+      <label for="password">Password:</label><br>
+      <input type="password" name="password" id="password" required>
+    </div>
+    <div class="age">
+      <label for="age">Age:</label><br>
+      <input type="text" name="age" id="age">
+    </div>
+    <div class="sex">
+      <label for="sex">Sex:</label><br>
+      <select id="sex" name="sex" required>
+        <option value="">-</option>
+        <option value="M">M</option>
+        <option value="F">F</option>
+      </select>
+    </div>
+    <div class="city">
+      <label for="city">City(optional):</label><br>
+      <input type="text" name="city" id="city">
+    </div>
+    <div class="zipcode">
+      <label for="zipcode">Zipcode(optional):</label><br>
+      <input type="text" name="zipcode" id="zipcode">
+    </div>
+    <div class="phone">
+      <label for="phone">Phone Number(optional):</label><br>
+      <input type="text" name="phone" id="phone">
+    </div>
+    <div class="bio">
+      <label for="bio">Short Bio. You can write down your motto or a few things about yourself(optional):</label><br>
+      <input type="text" name="bio" id="bio">
+    </div>
+    <div class="address">
+      <label for="address">Address(optional):</label><br>
+      <input type="text" name="address" id="address">
+    </div>
+    <input type="submit" value="SIGN UP">
+  </form>
+
+
+
+
+</body>
+
+</html>

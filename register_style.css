@@ -1,0 +1,515 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo-image {
+  position: absolute;
+  width: 70px;
+  height: 72.42px;
+  left: 13px;
+  top: 17px;
+}
+
+.logo a {
+  font-family: Baloo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  text-decoration: none;
+  position: absolute;
+  width: 125px;
+  height: 33px;
+  left: 80px;
+  top: 39px;
+}
+
+mark {
+  color: #6B9C9C;
+  background: none;
+}
+
+.register {
+  position: absolute;
+  width: 33px;
+  height: 33.15px;
+  left: 319px;
+  top: 38px;
+}
+
+.header {
+  position: absolute;
+  width: 276px;
+  height: 51px;
+  left: 38px;
+  top: 104px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.volunteer a {
+  position: absolute;
+  width: 133px;
+  height: 34px;
+  left: 27px;
+  top: 150px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #89205D;
+}
+
+.organizer a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #A49E9E;
+  text-decoration: none;
+  position: absolute;
+  width: 101px;
+  height: 17px;
+  left: 230px;
+  top: 150px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 86px;
+  top: 176px;
+  background: #89205D;
+}
+
+.line {
+  border-top: 2px solid #A49E9E;
+  width: 321px;
+  position: absolute;
+  left: calc(50% - 160px);
+  top: 194px;
+}
+
+.rectangle {
+  position: absolute;
+  width: 321px;
+  height: 583px;
+  left: 26px;
+  top: 217px;
+  background: #C1D5D5;
+  border-radius: 15px;
+}
+
+.first_name {
+  background-color: #ffffff;
+}
+
+.first_name label {
+  position: absolute;
+  width: 91px;
+  height: 20px;
+  left: 38px;
+  top: 223px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.first_name input[type="text"] {
+  position: absolute;
+  width: 132px;
+  height: 23px;
+  left: 38px;
+  top: 243px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
+
+.last_name {
+  background-color: #ffffff;
+}
+
+.last_name label {
+  position: absolute;
+  width: 91px;
+  height: 20px;
+  left: 202px;
+  top: 223px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.last_name input[type="text"] {
+  position: absolute;
+  width: 132px;
+  height: 23px;
+  left: 202px;
+  top: 243px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
+
+.email {
+  background-color: #ffffff;
+}
+
+.email label {
+  position: absolute;
+  width: 91px;
+  height: 20px;
+  left: 38px;
+  top: 330px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.email input[type="email"] {
+  position: absolute;
+  width: 296px;
+  height: 23px;
+  left: 38px;
+  top: 347px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
+
+.username {
+  background-color: #ffffff;
+}
+
+.username label {
+  position: absolute;
+  width: 164px;
+  height: 20px;
+  left: 38px;
+  top: 539px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.username input[type="text"] {
+  position: absolute;
+  width: 296px;
+  height: 23px;
+  left: 38px;
+  top: 556px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
+
+.username-disc {
+  position: absolute;
+  width: 292px;
+  height: 11px;
+  left: 40px;
+  top: 580px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 10px;
+  color: #000000;
+}
+
+.password {
+  background-color: #ffffff;
+}
+
+.password label {
+  position: absolute;
+  width: 91px;
+  height: 20px;
+  left: 38px;
+  top: 600px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.password input[type="password"] {
+  position: absolute;
+  width: 296px;
+  height: 23px;
+  left: 38px;
+  top: 618px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
+
+input[type="submit"] {
+  position: absolute;
+  width: 137px;
+  height: 31px;
+  top: 763px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  background: #6B9C9C;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+
+.age {
+  background-color: #ffffff;
+}
+
+.age label {
+  position: absolute;
+  width: 91px;
+  height: 20px;
+  left: 38px;
+  top: 276px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.age input[type="text"] {
+  position: absolute;
+  width: 132px;
+  height: 23px;
+  left: 38px;
+  top: 296px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
+
+.sex {
+  background-color: #ffffff;
+}
+
+.sex label {
+  position: absolute;
+  width: 91px;
+  height: 20px;
+  left: 202px;
+  top: 276px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.sex select {
+  position: absolute;
+  width: 132px;
+  height: 23px;
+  left: 202px;
+  top: 296px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+}
+
+.city {
+  background-color: #ffffff;
+}
+
+.city label {
+  position: absolute;
+  width: 91px;
+  height: 20px;
+  left: 38px;
+  top: 385px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.city input[type="text"] {
+  position: absolute;
+  width: 132px;
+  height: 23px;
+  left: 38px;
+  top: 403px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
+
+.zipcode {
+  background-color: #ffffff;
+}
+
+.zipcode label {
+  position: absolute;
+  width: 132px;
+  height: 20px;
+  left: 202px;
+  top: 386px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.zipcode input[type="text"] {
+  position: absolute;
+  width: 132px;
+  height: 23px;
+  left: 202px;
+  top: 403px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
+
+.address {
+  background-color: #ffffff;
+}
+
+.address label {
+  position: absolute;
+  width: 164px;
+  height: 20px;
+  left: 38px;
+  top: 438px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.address input[type="text"] {
+  position: absolute;
+  width: 296px;
+  height: 23px;
+  left: 38px;
+  top: 455px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
+
+.phone {
+  background-color: #ffffff;
+}
+
+.phone label {
+  position: absolute;
+  width: 164px;
+  height: 20px;
+  left: 38px;
+  top: 489px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.phone input[type="text"] {
+  position: absolute;
+  width: 296px;
+  height: 23px;
+  left: 38px;
+  top: 506px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
+
+.bio {
+  background-color: #ffffff;
+}
+
+.bio label {
+  position: absolute;
+  width: 294px;
+  height: 30px;
+  left: 38px;
+  top: 647px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.bio input[type="text"] {
+  position: absolute;
+  width: 296px;
+  height: 55px;
+  left: 38px;
+  top: 677px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+padding-left: 10px;
+padding-top: 10px;
+}

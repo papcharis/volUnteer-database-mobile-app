@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>volUnteer</title>
+  <link rel="stylesheet" href="organizer-profile-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="logo-image">
+    <img src="./images/logo.png" alt="" />
+  </div>
+  <div class="logo">
+    <a href="./organizer.php">Vol<mark>U</mark>nteer</a>
+  </div>
+  <div class="myprofile">
+    <img src="./images/org.svg" alt="" />
+  </div>
+  <div class="rectangle"></div>
+  <a href="">
+    <div class="edit"></div>
+    <div class="edit-1">
+        Edit
+    </div>
+  </a>
+  <div class="profile-pic">
+    <img src="./images/organizer-profile.png" alt="" />
+  </div>
+  <div class="line"></div>
+  <div class="profile-icon-1">
+    <img src="./images/org-icon.svg" alt="" />
+  </div>
+  <div class="profile-icon-2">
+    <img src="./images/id-icon.svg" alt="" />
+  </div>
+  <div class="profile-icon-3">
+    <img src="./images/loc-icon.svg" alt="" />
+  </div>
+
+</body>
+
+</html>

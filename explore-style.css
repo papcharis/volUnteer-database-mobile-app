@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo-image {
+  position: absolute;
+  width: 70px;
+  height: 72.42px;
+  left: 13px;
+  top: 17px;
+}
+
+.logo a {
+  font-family: Baloo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  text-decoration: none;
+  position: absolute;
+  width: 125px;
+  height: 33px;
+  left: 80px;
+  top: 39px;
+}
+
+mark {
+  color: #6B9C9C;
+  background: none;
+}
+
+.myevents {
+  position: absolute;
+  width: 33px;
+  height: 33.15px;
+  left: 319px;
+  top: 41px;
+}
+
+.explore-header {
+  position: absolute;
+  width: 200px;
+  height: 38px;
+  left: 5px;
+  top: 128px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #000000;
+}
+
+.line {
+  border-top: 2px solid #A49E9E;
+  width: 321px;
+  position: absolute;
+  left: calc(50% - 160px);
+  top: 242px;
+}
+
+.upcoming {
+  position: absolute;
+  width: 276px;
+  height: 26px;
+  left: 25px;
+  top: 279px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.rectangle {
+  position: absolute;
+  width: 321px;
+  height: 100px;
+  left: calc(50% - 160px);
+  top: 319px;
+  background: rgba(255, 129, 41, 0.46);
+  border-radius: 15px;
+}
+
+.duration {
+  position: absolute;
+  width: 10.4px;
+  height: 13px;
+  left: calc(50% - 144px);
+  top: 350px;
+}
+
+.organizer {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: calc(50% - 147px);
+  top: 372px;
+}
+
+.location {
+  position: absolute;
+  width: 9px;
+  height: 14px;
+  left: calc(50% - 144px);
+  top: 393px;
+}
+
+.more {
+  position: absolute;
+  width: 72px;
+  height: 29px;
+  left: 266px;
+  top: 381px;
+  background: rgba(255, 129, 41, 0.8);
+  border-radius: 15px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.more-1 {
+  position: absolute;
+  width: 43px;
+  height: 20px;
+  left: 276px;
+  top: 385px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.more-2 {
+  position: absolute;
+  width: 43px;
+  height: 20px;
+  left: 320px;
+  top: 387px;
+}

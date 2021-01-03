@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>volUnteer</title>
+    <link rel="stylesheet" href="login_style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="logo-image">
+	    <img src="./images/logo-login.png" alt="" />
+	  </div>
+	  <div class="logo">
+	    <a href="./index.html">Vol<mark>U</mark>nteer</a>
+	  </div>
+		<div class="login">Log in:</div>
+		<div class="line"></div>
+      <form action="authenticate.php" method="post" autocomplete="off">
+				<div class="login-1">
+					<img src="./images/login-1.svg" alt="" />
+				</div>
+        <div class="username">
+          <label for="username">Username:</label><br>
+          <input type="text" name="username" placeholder="Enter your username here.." id="username" required>
+        </div>
+				<div class="login-2">
+					<img src="./images/login-2.svg" alt="" />
+				</div>
+        <div class="password">
+          <label for="password">Password:</label><br>
+          <input type="password" name="password" placeholder="Enter your password here.." id="password" required>
+			</form>
+			<div class="login-3">
+				<img src="./images/login-3.svg" alt="" />
+			</div>
+      <input type="submit" value="LOGIN">
+	</body>
+</html>

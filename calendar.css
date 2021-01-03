@@ -1,0 +1,58 @@
+div#calendar div.header span.title {
+  position: absolute;
+  width: auto;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 135px;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+#names {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  position: absolute;
+  width: auto;
+  height: 18px;
+  left: 123px;
+}
+
+#names2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #544A4A;
+  position: absolute;
+  width: auto;
+  height: 18px;
+  left: 25px;
+}
+
+
+div#calendar div.header a.prev {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 29px;
+  top: 124px;
+}
+
+div#calendar div.header a.next {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 320px;
+  top: 124px;
+}
