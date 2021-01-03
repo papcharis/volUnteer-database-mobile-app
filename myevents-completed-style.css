@@ -178,3 +178,55 @@ mark {
   left: 320px;
   top: 347px;
 }
+
+
+.actname {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  left: calc(50% - 146px);
+  top: 284px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: #000000;
+}
+
+.durationText {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  left: calc(50% - 130px);
+  top: 310px;
+  font-family: Montserrat;
+  font-style: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.roleText {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  left: calc(50% - 130px);
+  top: 332px;
+  font-family: Montserrat;
+  font-style: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.locationText {
+  position: absolute;
+  width: 43px;
+  height: 20px;
+  left: calc(50% - 130px);
+  top: 353px;
+  font-family: Montserrat;
+  font-style: normal;
+  text-align: left;
+  color: #000000;
+}

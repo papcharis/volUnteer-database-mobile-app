@@ -51,7 +51,7 @@ class Calendar {
         return $content;
     }
 
-    public function eventsOfMonth(mysqli $conn){
+    public function eventsOfMonth(mysqli $conn) {
 
       $sql = "SELECT ActName, volunteersNeeded,City,Start_Date ,DATEDIFF(End_Date,Start_Date) AS Duration FROM voluntary_activity
               WHERE month(Start_Date)= '$this->currentMonth' AND year(Start_Date) = '$this->currentYear' ORDER BY Start_Date";
