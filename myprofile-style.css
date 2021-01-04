@@ -97,6 +97,23 @@ mark {
   top: 360px;
 }
 
+.full-name {
+  position: absolute;
+  width: 284px;
+  height: 38px;
+  left: 50%;
+  top: 344px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+
 .profile-icon-1 {
   position: absolute;
   width: 20px;
@@ -126,7 +143,7 @@ mark {
   width: 114px;
   height: 22px;
   left: 130px;
-  top: 559px;
+  top: 579px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -141,7 +158,7 @@ mark {
   width: 200px;
   position: absolute;
   left: calc(50% - 100px);
-  top: 593px;
+  top: 613px;
 }
 
 .username-text {
@@ -158,71 +175,61 @@ mark {
   color: #544A4A;
 }
 
-.age-text{
+.age-text {
   position: absolute;
   width: 78px;
   height: 18px;
   left: 115.11px;
   top: 442.5px;
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-
   color: #544A4A;
 }
 
-.shortBio-text{
+.shortBio-text {
   position: absolute;
   width: 226px;
   height: 46px;
   left: 113px;
   top: 487px;
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
-
   color: #544A4A;
 }
 
-.phone-text{
+.phone-text {
   position: absolute;
   width: 93px;
   height: 20px;
   left: 117px;
-  top: 610px;
-
+  top: 630px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   /* identical to box height */
-
-
   color: #544A4A;
 }
 
-.email-text{
+.email-text {
   position: absolute;
   width: 219px;
   height: 25px;
   left: 117px;
-  top: 663px;
-
+  top: 683px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-
   color: #544A4A;
-
 }
 
 .profile-icon-4 {
@@ -230,7 +237,7 @@ mark {
   width: 30px;
   height: 28.82px;
   left: 62px;
-  top: 609px;
+  top: 629px;
 }
 
 .profile-icon-5 {
@@ -238,5 +245,5 @@ mark {
   width: 40px;
   height: 30px;
   left: 60px;
-  top: 664px;
+  top: 684px;
 }

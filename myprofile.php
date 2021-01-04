@@ -102,6 +102,7 @@
   <div class="profile-icon-5">
     <img src="./images/profile-icon-5.svg" alt="" />
   </div>
+  <div class="full-name"><?=$fname. ' ' .$lname?></div>
   <div class="username-text"><?=$_SESSION['username']?></div>
   <div class="age-text"><?=$age?></div>
   <div class="shortBio-text"><?=$shortBio?></div>
