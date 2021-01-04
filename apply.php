@@ -18,12 +18,12 @@
   include 'db_connection.php';
   $conn = open_con();
 
-  $stmt = $conn->prepare('SELECT First_Name,Last_Name,Email,Age,ShortBio,Phone,Sex FROM volunteer_profile WHERE username=?');
+  $stmt = $conn->prepare('SELECT First_Name FROM volunteer_profile WHERE username=?');
   $stmt->bind_param('s',$_SESSION['username']);
   $stmt->execute();
   $stmt->store_result();
   if($stmt->num_rows>0){
-    $stmt->bind_result($fname,$lname,$email,$age,$shortBio,$phone,$sex);
+    $stmt->bind_result($fname);
     $stmt->fetch();
   }
   else{
@@ -82,7 +82,6 @@
     </div>
       <input type="submit" value="Send">
 
-      <!-- <input type="hidden" name="actid" value="<?php $_POST['actid']; ?>"> -->
   </form>
 
 
