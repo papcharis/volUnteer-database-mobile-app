@@ -71,6 +71,7 @@
                             <img src="./images/location-small.svg" alt="" />
                         </div>';
 
+                        $record[0] = strlen($record[0]) > 30 ? substr($record[0],0,30)."..." : $record[0];
                         echo '<div class="actname" style = "
                         top: '.$text1.'px;
                         ">
@@ -193,6 +194,7 @@
                             <img src="./images/location-small.svg" alt="" />
                         </div>';
 
+                        $record[0] = strlen($record[0]) > 30 ? substr($record[0],0,30)."..." : $record[0];
                         echo '<div class="actname" style = "
                         top: '.$text1.'px;
                         ">
@@ -299,6 +301,7 @@
                             <img src="./images/location-small.svg" alt="" />
                         </div>';
 
+                        $record[0] = strlen($record[0]) > 30 ? substr($record[0],0,30)."..." : $record[0];
                         echo '<div class="actname" style = "
                         top: '.$text1.'px;
                         ">
