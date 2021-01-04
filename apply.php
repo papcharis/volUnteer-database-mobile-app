@@ -9,10 +9,29 @@
   <title>volUnteer</title>
   <link rel="stylesheet" href="apply-style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Baloo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <?php session_start();
+  $va = $_GET["ActName"];
+  $va2 = $_SESSION['username'];
+  echo '<div class="title" style = "position: absolute;
+          width: auto;
+          height: 18px;
+          left: calc(50% - 155px);
+          top: 398px;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          text-transform: uppercase;
+          line-height: 29px;
+          text-align: center;
+          color: #000000;">';
+  echo  $va;
+  echo '</div>';
+?>
 
   <div class="logo-image">
     <img src="./images/logo.png" alt="" />
@@ -35,7 +54,7 @@
     </div>
   </a>
   <div class="text-1">
-    Apply:
+    Apply
   </div>
   <div class="text-2">
     Username:

@@ -48,13 +48,10 @@
       <img src="./images/arrow-small.svg" alt="" />
     </div>
   </a>
-  <form action="explore-results.php" method="GET">
-    <input type="text" name="search" />
-    <input type="submit" value="Search" />
-  </form>
 
 
 
+  
 </body>
 
 </html>

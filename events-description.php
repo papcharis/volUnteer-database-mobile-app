@@ -9,13 +9,13 @@
   <title>volUnteer</title>
   <link rel="stylesheet" href="events-description-style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Baloo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <?php
   $va = $_GET["ActName"];
-  
+
   include 'db_connection.php';
   $conn = open_con();
 
@@ -104,6 +104,13 @@
       echo '<br>';
       echo $row["City"].'&nbsp;,&nbsp;'.$row["ZipCode"];
       echo '</div>';
+      echo '<a href="./apply.php?ActName='.urldecode($row["ActName"]).'">';
+      echo  '<div class="apply">';
+      echo '</div>';
+      echo  '<div class="apply-1">';
+      echo    'Apply';
+      echo  '</div>';
+      echo '</a>';
 
   }
 } else {
@@ -122,12 +129,6 @@
   <div class="events">
     <img src="./images/events-photo.png" alt="" />
   </div>
-  <a href="./apply.php">
-    <div class="apply"></div>
-    <div class="apply-1">
-      Apply
-    </div>
-  </a>
   <div class="line"></div>
   <div class="rectangle-1"></div>
   <a href="">
