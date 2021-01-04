@@ -1,13 +1,13 @@
 * {
     box-sizing: border-box;
   }
-  
+
   body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
   }
-  
+
   .logo-image {
     position: absolute;
     width: 70px;
@@ -15,7 +15,7 @@
     left: 13px;
     top: 17px;
   }
-  
+
   .logo a {
     font-family: Baloo;
     font-style: normal;
@@ -31,12 +31,12 @@
     left: 80px;
     top: 39px;
   }
-  
+
   mark {
     color: #6B9C9C;
     background: none;
   }
-  
+
   .myevents {
     position: absolute;
     width: 33px;
@@ -44,7 +44,7 @@
     left: 319px;
     top: 41px;
   }
-  
+
   .myevents-header {
     position: absolute;
     width: 200px;
@@ -59,7 +59,7 @@
     text-align: center;
     color: #000000;
   }
-  
+
   .inprogress a {
     font-family: Montserrat;
     font-style: normal;
@@ -70,12 +70,12 @@
     color: #89205D;
     text-decoration: none;
     position: absolute;
-    width: 75px;
-    height: 34px;
-    left: 40px;
+    width: 95px;
+    height: 17px;
+    left: 29px;
     top: 183px;
   }
-  
+
   .upcoming a {
     font-family: Montserrat;
     font-style: normal;
@@ -86,12 +86,12 @@
     color: #A49E9E;
     text-decoration: none;
     position: absolute;
-    width: 75px;
+    width: 133px;
     height: 34px;
-    left: 150px;
+    left: 121px;
     top: 183px;
   }
-  
+
   .completed a {
     font-family: Montserrat;
     font-style: normal;
@@ -102,12 +102,12 @@
     color: #A49E9E;
     text-decoration: none;
     position: absolute;
-    width: 70px;
-    height: 34px;
-    left: 258px;
+    width: 101px;
+    height: 17px;
+    left: 245px;
     top: 183px;
   }
-  
+
   .dot {
     height: 8px;
     width: 8px;
@@ -118,7 +118,7 @@
     left: 75px;
     top: 212px;
   }
-  
+
   .line {
     border-top: 2px solid #A49E9E;
     width: 321px;
@@ -126,7 +126,7 @@
     left: calc(50% - 160px);
     top: 232px;
   }
-  
+
   .rectangle {
     position: absolute;
     width: 321px;
@@ -136,7 +136,7 @@
     background: #C1D5D5;
     border-radius: 15px;
   }
-  
+
   .duration {
     position: absolute;
     width: 10.4px;
@@ -144,7 +144,7 @@
     left: calc(50% - 146px);
     top: 310px;
   }
-  
+
   .role {
     position: absolute;
     width: 17px;
@@ -152,7 +152,7 @@
     left: calc(50% - 147px);
     top: 332px;
   }
-  
+
   .location {
     position: absolute;
     width: 9px;
@@ -160,7 +160,7 @@
     left: calc(50% - 144px);
     top: 353px;
   }
-  
+
   .review {
     position: absolute;
     width: 86px;
@@ -171,7 +171,7 @@
     border-radius: 15px;
     transform: matrix(1, 0, 0, -1, 0, 0);
   }
-  
+
   .review-1 {
     position: absolute;
     width: 43px;
@@ -186,7 +186,7 @@
     text-align: center;
     color: #000000;
   }
-  
+
   .review-2 {
     position: absolute;
     width: 43px;
@@ -194,8 +194,8 @@
     left: 320px;
     top: 347px;
   }
-  
-  
+
+
   .actname {
     position: absolute;
     width: 300px;
@@ -210,7 +210,7 @@
     text-align: left;
     color: #000000;
   }
-  
+
   .durationText {
     position: absolute;
     width: 200px;
@@ -222,7 +222,7 @@
     text-align: left;
     color: #000000;
   }
-  
+
   .roleText {
     position: absolute;
     width: 100px;
@@ -234,7 +234,7 @@
     text-align: left;
     color: #000000;
   }
-  
+
   .locationText {
     position: absolute;
     width: 43px;

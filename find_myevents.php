@@ -6,7 +6,7 @@
             header('Location: index.html');
             exit;
           }
-        
+
         $username = $_SESSION['username'];
         // $username = 'edi14';
 
@@ -19,7 +19,7 @@
         $bg = array('#FFC59D','#D9B8CB','#C1D5D5','#FFC59D','#D9B8CB','#C1D5D5','#FFC59D','#D9B8CB','#C1D5D5');
         $i = 0;
 
-        
+
         if ($result->num_rows > 0) {
             $RecPos = 280;
             $ActNamePos = 284;
@@ -29,7 +29,7 @@
             $ButtonPos = 340;
             $TextPos = 345;
 
-            $text1 = 284;  
+            $text1 = 284;
             $text2 = 310;
             $text3 = 332;
             $text4 = 353;
@@ -63,12 +63,12 @@
                         "
                         >
                             <img src="./images/duration-small.svg" alt="" />
-                        </div>';  
+                        </div>';
                         echo '<div class="role" style = "
                         top: '.$RolePos.'px;
                         ">
                             <img src="./images/role-small.svg" alt="" />
-                        </div>'; 
+                        </div>';
                         echo '<div class="location" style = "
                         top: '.$LocPos.'px;
                         ">
@@ -79,22 +79,49 @@
                         top: '.$text1.'px;
                         ">
                         '.$record[0].'
-                        </div>'; 
-                        echo '<div class="durationText" style = "
+                        </div>';
+                        echo '<div class="durationText" style = "font-family: Montserrat;
+                          font-style: normal;
+                          font-weight: normal;
+                          font-size: 13px;
+                          line-height: 16px;
+                          text-align: center;
+                          color: #544A4A;
+                          position: absolute;
+                          width: auto;
+                          left: 65px;
                         top: '.$text2.'px;
                         ">
                         '.$record[2].' - '.$record[3].'
-                        </div>'; 
-                        echo '<div class="roleText" style = "
+                        </div>';
+                        echo '<div class="roleText" style = "font-family: Montserrat;
+                          font-style: normal;
+                          font-weight: normal;
+                          font-size: 13px;
+                          line-height: 16px;
+                          text-align: center;
+                          color: #544A4A;
+                          position: absolute;
+                          width: auto;
+                          left: 65px;
                         top: '.$text3.'px;
                         ">
                         '.$row['Role_Title'].'
-                        </div>'; 
-                        echo '<div class="locationText" style = "
+                        </div>';
+                        echo '<div class="locationText" style = "font-family: Montserrat;
+                          font-style: normal;
+                          font-weight: normal;
+                          font-size: 13px;
+                          line-height: 16px;
+                          text-align: center;
+                          color: #544A4A;
+                          position: absolute;
+                          width: auto;
+                          left: 65px;
                         top: '.$text4.'px;
                         ">
                         '.$record[1].'
-                        </div>'; 
+                        </div>';
 
                         echo '<a href="./review.php">
                             <div class="review" style = "
@@ -119,7 +146,7 @@
                         $LocPos = $LocPos + 120;
                         $ButtonPos = $ButtonPos + 120;
                         $TextPos = $TextPos +120;
-                        $text1 = $text1 + 120;  
+                        $text1 = $text1 + 120;
                         $text2 = $text2 + 120;
                         $text3 = $text3 + 120;
                         $text4 = $text4 + 120;
@@ -145,7 +172,7 @@
 
                     $act_result = $conn->query($sql2);
                     $record = $act_result->fetch_row();
-                    
+
                     # event_start_date > current date
                     if($record[2] > date('Y-m-d')) {
 
@@ -163,12 +190,12 @@
                         "
                         >
                             <img src="./images/duration-small.svg" alt="" />
-                        </div>';  
+                        </div>';
                         echo '<div class="role" style = "
                         top: '.$RolePos.'px;
                         ">
                             <img src="./images/role-small.svg" alt="" />
-                        </div>'; 
+                        </div>';
                         echo '<div class="location" style = "
                         top: '.$LocPos.'px;
                         ">
@@ -179,38 +206,50 @@
                         top: '.$text1.'px;
                         ">
                         '.$record[0].'
-                        </div>'; 
-                        echo '<div class="durationText" style = "
-                        top: '.$text2.'px;
+                        </div>';
+                        echo '<div class="durationText" style = "font-family: Montserrat;
+                          font-style: normal;
+                          font-weight: normal;
+                          font-size: 13px;
+                          line-height: 16px;
+                          text-align: center;
+                          color: #544A4A;
+                          position: absolute;
+                          width: auto;
+                          left: 65px;
+                          top: '.$text2.'px;
                         ">
                         '.$record[2].' - '.$record[3].'
-                        </div>'; 
-                        echo '<div class="roleText" style = "
+                        </div>';
+                        echo '<div class="roleText" style = "font-family: Montserrat;
+                          font-style: normal;
+                          font-weight: normal;
+                          font-size: 13px;
+                          line-height: 16px;
+                          text-align: center;
+                          color: #544A4A;
+                          position: absolute;
+                          width: auto;
+                          left: 65px;
                         top: '.$text3.'px;
                         ">
                         '.$row['Role_Title'].'
-                        </div>'; 
-                        echo '<div class="locationText" style = "
+                        </div>';
+                        echo '&nbsp';
+                        echo '<div class="locationText" style = "font-family: Montserrat;
+                          font-style: normal;
+                          font-weight: normal;
+                          font-size: 13px;
+                          line-height: 16px;
+                          text-align: center;
+                          color: #544A4A;
+                          position: absolute;
+                          width: auto;
+                          left: 65px;
                         top: '.$text4.'px;
                         ">
                         '.$record[1].'
-                        </div>'; 
-
-                        echo '<a href="./review.php">
-                            <div class="review" style = "
-                            top: '.$ButtonPos.'px;
-                            "></div>
-                            <div class="review-1" style = "
-                            top: '.$TextPos.'px;
-                            ">
-                            More
-                            </div>
-                            <div class="review-2" style = "
-                            top: '.$TextPos.'px;
-                            ">
-                                <img src="./images/arrow-small.svg" alt="" />
-                            </div>
-                        </a>';
+                        </div>';
 
                         $RecPos = $RecPos +120;
                         $ActNamePos = $ActNamePos + 120;
@@ -219,7 +258,7 @@
                         $LocPos = $LocPos + 120;
                         $ButtonPos = $ButtonPos + 120;
                         $TextPos = $TextPos +120;
-                        $text1 = $text1 + 120;  
+                        $text1 = $text1 + 120;
                         $text2 = $text2 + 120;
                         $text3 = $text3 + 120;
                         $text4 = $text4 + 120;
@@ -262,12 +301,12 @@
                         "
                         >
                             <img src="./images/duration-small.svg" alt="" />
-                        </div>';  
+                        </div>';
                         echo '<div class="role" style = "
                         top: '.$RolePos.'px;
                         ">
                             <img src="./images/role-small.svg" alt="" />
-                        </div>'; 
+                        </div>';
                         echo '<div class="location" style = "
                         top: '.$LocPos.'px;
                         ">
@@ -278,38 +317,49 @@
                         top: '.$text1.'px;
                         ">
                         '.$record[0].'
-                        </div>'; 
-                        echo '<div class="durationText" style = "
+                        </div>';
+                        echo '<div class="durationText" style = "font-family: Montserrat;
+                          font-style: normal;
+                          font-weight: normal;
+                          font-size: 13px;
+                          line-height: 16px;
+                          text-align: center;
+                          color: #544A4A;
+                          position: absolute;
+                          width: auto;
+                          left: 65px;
                         top: '.$text2.'px;
                         ">
                         '.$record[2].' - '.$record[3].'
-                        </div>'; 
-                        echo '<div class="roleText" style = "
+                        </div>';
+                        echo '<div class="roleText" style = "font-family: Montserrat;
+                          font-style: normal;
+                          font-weight: normal;
+                          font-size: 13px;
+                          line-height: 16px;
+                          text-align: center;
+                          color: #544A4A;
+                          position: absolute;
+                          width: auto;
+                          left: 65px;
                         top: '.$text3.'px;
                         ">
                         '.$row['Role_Title'].'
-                        </div>'; 
-                        echo '<div class="locationText" style = "
+                        </div>';
+                        echo '<div class="locationText" style = "font-family: Montserrat;
+                          font-style: normal;
+                          font-weight: normal;
+                          font-size: 13px;
+                          line-height: 16px;
+                          text-align: center;
+                          color: #544A4A;
+                          position: absolute;
+                          width: auto;
+                          left: 65px;
                         top: '.$text4.'px;
                         ">
                         '.$record[1].'
-                        </div>'; 
-
-                        echo '<a href="./review.php">
-                            <div class="review" style = "
-                            top: '.$ButtonPos.'px;
-                            "></div>
-                            <div class="review-1" style = "
-                            top: '.$TextPos.'px;
-                            ">
-                            Review
-                            </div>
-                            <div class="review-2" style = "
-                            top: '.$TextPos.'px;
-                            ">
-                                <img src="./images/arrow-small.svg" alt="" />
-                            </div>
-                        </a>';
+                        </div>';
 
                         $RecPos = $RecPos +120;
                         $ActNamePos = $ActNamePos + 120;
@@ -318,7 +368,7 @@
                         $LocPos = $LocPos + 120;
                         $ButtonPos = $ButtonPos + 120;
                         $TextPos = $TextPos +120;
-                        $text1 = $text1 + 120;  
+                        $text1 = $text1 + 120;
                         $text2 = $text2 + 120;
                         $text3 = $text3 + 120;
                         $text4 = $text4 + 120;
