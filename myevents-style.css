@@ -233,7 +233,7 @@ mark {
 
 .actname {
   position: absolute;
-  width: 200px;
+  width: 300px;
   height: 20px;
   left: calc(50% - 146px);
   top: 284px;

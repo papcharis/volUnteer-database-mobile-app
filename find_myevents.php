@@ -136,7 +136,7 @@
 
 
 
-            # find up comig events
+            # find upcoming events
             if($mode == 'upcoming') {
                 while($row = $result->fetch_assoc()) {
                     $actId = $row['Activity_ID'];
