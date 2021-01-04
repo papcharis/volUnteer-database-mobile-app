@@ -26,6 +26,9 @@
   <div class="myevents-header">
     My Events
   </div>
+  <div class="inprogress">
+    <a href="./myevents-inprogress.php">In-Progress</a>
+  </div>
   <div class="upcoming">
     <a href="./myevents.php">Up-coming</a>
   </div>

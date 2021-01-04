@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>volUnteer</title>
-  <link rel="stylesheet" href="myevents-completed-style.css" />
+  <link rel="stylesheet" href="myevents-inprogress-style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Baloo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
@@ -45,7 +45,7 @@
     include 'db_connection.php';
     $conn = open_con();
 
-    find_myevents($conn, 'completed');
+    find_myevents($conn, 'inprogress');
     $conn->close();
   ?>
 
