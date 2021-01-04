@@ -9,16 +9,16 @@
   include 'db_connection.php';
   $conn = open_con();
 
-  $stmt = $conn->prepare('SELECT First_Name,Last_Name,Email,Age,ShortBio,Phone FROM volunteer_profile WHERE username=?');
+  $stmt = $conn->prepare('SELECT First_Name,Last_Name,Email,Age,ShortBio,Phone,Sex FROM volunteer_profile WHERE username=?');
   $stmt->bind_param('s',$_SESSION['username']);
   $stmt->execute();
   $stmt->store_result();
   if($stmt->num_rows>0){
-    $stmt->bind_result($fname,$lname,$email,$age,$shortBio,$phone);
+    $stmt->bind_result($fname,$lname,$email,$age,$shortBio,$phone,$sex);
     $stmt->fetch();
   }
   else{
-    echo "Shit Happens";
+    echo "Query did not work out.";
   }
 
   $stmt->close();
@@ -60,7 +60,12 @@
   </a>
   <div class="profile-pic">
   <?php
-    $bg = array('profile-1.png', 'profile-2.png', 'profile-3.png', 'profile-4.png', 'profile-5.png', 'profile-6.png');
+    if($sex=='M'){
+      $bg = array('profile-3.png', 'profile-4.png','profile-6.png');
+    }
+    else{
+      $bg = array('profile-1.png', 'profile-2.png','profile-5.png');
+    }
     $i = rand(0, count($bg)-1);
     $selectedBg = "$bg[$i]";
   ?>
