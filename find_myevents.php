@@ -16,10 +16,6 @@
         $result = $conn->query($sql);
 
 
-        $bg = array('#FFC59D','#D9B8CB','#C1D5D5','#FFC59D','#D9B8CB','#C1D5D5','#FFC59D','#D9B8CB','#C1D5D5');
-        $i = 0;
-
-
         if ($result->num_rows > 0) {
             $RecPos = 280;
             $ActNamePos = 284;
@@ -152,11 +148,6 @@
                         $text4 = $text4 + 120;
                         $text5 = $text5 + 120;
                         $text6 = $text6 + 120;
-
-                        $i++;
-                        if($i >= 8) {
-                            $i=0;
-                        }
                     }
                 }
             }
@@ -264,11 +255,6 @@
                         $text4 = $text4 + 120;
                         $text5 = $text5 + 120;
                         $text6 = $text6 + 120;
-
-                        $i++;
-                        if($i >= 8) {
-                            $i=0;
-                        }
                     }
                 }
             }
@@ -285,7 +271,7 @@
                     $record = $act_result->fetch_row();
 
                     # event start date <= current date <= event end date
-                    if($record[2] >= date('Y-m-d') && $record[3] <= date('Y-m-d')) {
+                    if($record[2] <= date('Y-m-d') && $record[3] >= date('Y-m-d')) {
 
                         echo '<div class="rectangle"  style = "
                         position: absolute;
@@ -374,17 +360,9 @@
                         $text4 = $text4 + 120;
                         $text5 = $text5 + 120;
                         $text6 = $text6 + 120;
-
-                        $i++;
-                        if($i >= 8) {
-                            $i=0;
-                        }
                     }
                 }
             }
-
-
-
         }
     }
 ?>
