@@ -86,6 +86,7 @@ class Calendar {
           border-radius: 15px;"></div>';
           echo '<div id="names" class="text" style="top: '.$selectedTg.'px;">';
           echo '<span style="font-size:16px;font-weight:600;line-height: 30px;">';
+          $row['ActName'] = strlen($row['ActName']) > 22 ? substr($row['ActName'],0,22)."..." : $row['ActName'];
           echo $row["ActName"];
           echo '</span> <br>';
           echo '&nbsp;';
