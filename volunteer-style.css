@@ -32,6 +32,16 @@ body {
   top: 39px;
 }
 
+.logout{
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 312px;
+  top: 33px;
+
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
 mark {
   color: #6B9C9C;
   background: none;
