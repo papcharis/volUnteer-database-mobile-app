@@ -91,6 +91,8 @@
           <img src="./images/location-small.svg" alt="" />
       </div>';
 
+      $row['ActName'] = strlen($row['ActName']) > 30 ? substr($row['ActName'],0,30)."..." : $row['ActName'];
+
       echo '<div class="actname" style = "
       top: '.$text1.'px;
       ">
