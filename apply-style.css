@@ -91,34 +91,11 @@ mark {
   position: absolute;
   width: 321px;
   height: 167px;
+  z-index: -1;
   left: calc(50% - 160px);
   top: 460px;
   background: rgba(255, 129, 41, 0.46);
   border-radius: 15px;
-}
-
-.send {
-  position: absolute;
-  width: 50px;
-  height: 18px;
-  left: 161px;
-  top: 600px;
-  background: #FF8129;
-  border-radius: 15px;
-}
-
-.send-1 {
-  position: absolute;
-  width: 33px;
-  height: 22px;
-  left: 170px;
-  top: 601.5px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  color: #000000;
 }
 
 .text-1 {
@@ -134,17 +111,34 @@ mark {
   line-height: 22px;
   color: #000000;
 }
-
-.text-2 {
+.motivationalLetter input[type="text"] {
   position: absolute;
-  width: 109px;
-  height: 20px;
-  left: 49px;
-  top: 514px;
+  width: 288px;
+  height: 48px;
+  left: 42px;
+  top: 540px;
+  background: rgba(255, 129, 41, 0.39);
+  border: 1px solid rgba(255, 129, 41, 0.8);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+input[type="submit"] {
+
+  position: absolute;
+  width: 50px;
+  height: 18px;
+  left: 50%;
+  top: 609px;
+  background: rgba(255, 129, 41, 0.8);
+  border-radius: 15px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 14px;
   color: #000000;
+  border: none;
 }

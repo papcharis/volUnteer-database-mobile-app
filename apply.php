@@ -15,7 +15,32 @@
 <body>
   <?php session_start();
   $va = $_GET["ActName"];
-  $va2 = $_SESSION['username'];
+  include 'db_connection.php';
+  $conn = open_con();
+
+  $stmt = $conn->prepare('SELECT First_Name,Last_Name,Email,Age,ShortBio,Phone,Sex FROM volunteer_profile WHERE username=?');
+  $stmt->bind_param('s',$_SESSION['username']);
+  $stmt->execute();
+  $stmt->store_result();
+  if($stmt->num_rows>0){
+    $stmt->bind_result($fname,$lname,$email,$age,$shortBio,$phone,$sex);
+    $stmt->fetch();
+  }
+  else{
+    echo "Query did not work out.";
+  }
+  $stmt2 = $conn->prepare('SELECT Activity_ID FROM voluntary_activity WHERE ActName=?');
+  $stmt2->bind_param('s',$va);
+  $stmt2->execute();
+  $stmt2->store_result();
+  if($stmt2->num_rows>0){
+    $stmt2->bind_result($actid);
+    $stmt2->fetch();
+  }
+  else{
+    echo "Query did not work out.";
+  }
+
   echo '<div class="title" style = "position: absolute;
           width: auto;
           height: 18px;
@@ -31,7 +56,35 @@
           color: #000000;">';
   echo  $va;
   echo '</div>';
+  echo '<div class="welcome" style = "position: absolute;
+          width: auto;
+          height: 20px;
+          left: 49px;
+          top: 501px;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          color: #000000;">';
+  echo 'Hello ';
+  echo  $fname;
+  echo '! Its time to volunteer!';
+  echo '</div>';
+
 ?>
+
+  <form action="apply-insert.php?actid=<?php echo $actid ?>" method="post">
+    <div class="motivationalLetter">
+      <p>
+          <input type="text" name="motivationalLetter" id="motivationalLetter">
+      </p>
+    </div>
+      <input type="submit" value="Send">
+
+      <!-- <input type="hidden" name="actid" value="<?php $_POST['actid']; ?>"> -->
+  </form>
+
 
   <div class="logo-image">
     <img src="./images/logo.png" alt="" />
@@ -47,18 +100,11 @@
   </div>
   <div class="line"></div>
   <div class="rectangle-1"></div>
-  <a href="">
-    <div class="send"></div>
-    <div class="send-1">
-      Send
-    </div>
-  </a>
   <div class="text-1">
     Apply
   </div>
-  <div class="text-2">
-    Username:
-  </div>
 </body>
+
+
 
 </html>
