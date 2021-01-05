@@ -14,6 +14,13 @@
 </head>
 
 <body>
+
+  <a href="logout.php">
+    <div class="logout">
+      <img src="./images/logout-icon.svg" alt="" />
+    </div>
+  </a>
+
   <div class="logo-image">
     <img src="./images/logo.png" alt="" />
   </div>

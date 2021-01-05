@@ -37,6 +37,15 @@ mark {
   background: none;
 }
 
+.logout{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 333px;
+  top: 43px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
 .rectangle-1 {
   position: absolute;
   width: 177px;
