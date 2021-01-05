@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo-image {
+  position: absolute;
+  width: 70px;
+  height: 72.42px;
+  left: 13px;
+  top: 17px;
+}
+
+.mystaff {
+  position: absolute;
+  width: 50.6px;
+  height: 33px;
+  left: 312px;
+  top: 38px;
+}
+
+.mystaff-header{
+  position: absolute;
+  width: 154px;
+  height: 18px;
+  left: 9px;
+  top: 128px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.line{
+  position: absolute;
+  width: 321px;
+  height: 0px;
+  left: 27px;
+  top: 188px;
+
+  border: 2px solid #A49E9E;
+  transform: rotate(-0.18deg);
+}
+
+.small-line{
+  position: absolute;
+  width: 146.01px;
+  height: 0px;
+  left: 42px;
+
+  border: 1px solid #000000;
+}
+
+.name-text{
+  position: absolute;
+  width: 262px;
+  height: 20px;
+  left: 42px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #000000;
+}
+
+.event-text{
+  position: absolute;
+  width: 229px;
+  height: 22px;
+  left: 42px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #544A4A;
+}
+
+.title-text{
+  position: absolute;
+  width: 223px;
+  height: 18px;
+  left: 42px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #544A4A;
+}
+
+.ID-text{
+  position: absolute;
+  width: 223px;
+  height: 18px;
+  left: 42px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #544A4A;
+}
+
+mark {
+  color: #6B9C9C;
+  background: none;
+}
+
+.logo a {
+  font-family: Baloo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  text-decoration: none;
+  position: absolute;
+  width: 125px;
+  height: 33px;
+  left: 80px;
+  top: 39px;
+}
