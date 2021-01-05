@@ -38,8 +38,34 @@ if ($stmt = $con->prepare('SELECT username,password FROM accountsV WHERE usernam
   	}
   } else {
   	// Incorrect username
-  	echo 'There is no volUnteer with this username.';
-  }
+		if ($stmt2 = $con->prepare('SELECT username,password FROM accountsO WHERE username = ?')) {
+			// Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
+			$stmt2->bind_param('s', $_POST['username']);
+			$stmt2->execute();
+			// Store the result so we can check if the account exists in the database.
+			$stmt2->store_result();
+			if ($stmt2->num_rows > 0) {
+				$stmt2->bind_result($username, $password);
+				$stmt2->fetch();
+				// Account exists, now we verify the password.
+				// Note: remember to use password_hash in your registration file to store the hashed passwords.
+				if (password_verify($_POST['password'], $password)) {
+					// Verification success! User has loggedin!
+					// Create sessions so we know the user is logged in, they basically act like cookies but remember the data on the server.
+					session_regenerate_id();
+					$_SESSION['loggedin'] = TRUE;
+					$_SESSION['username'] = $_POST['username'];
+					header('Location: organizer.php');
+				} else {
+					// Incorrect password
+					echo 'Incorrect password!';
+				}
+  	}
+		else{
+			echo "There is no volUnteer or organizer with this username";
+		}
+	}
+}
 
 	$stmt->close();
 }
