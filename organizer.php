@@ -72,7 +72,7 @@
   </a>
 
 
-  <a href="">
+  <a href="add-event.php">
     <div class="rectangle-4"></div>
     <div class="button-4">
       <img src="./images/organizer-button-4.svg" alt="" />

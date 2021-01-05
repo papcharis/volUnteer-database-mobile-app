@@ -1,0 +1,316 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo-image {
+  position: absolute;
+  width: 70px;
+  height: 72.42px;
+  left: 13px;
+  top: 17px;
+}
+
+.logo a {
+  font-family: Baloo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  text-decoration: none;
+  position: absolute;
+  width: 125px;
+  height: 33px;
+  left: 80px;
+  top: 39px;
+}
+
+mark {
+  color: #6B9C9C;
+  background: none;
+}
+
+.myevents {
+  position: absolute;
+  width: 33px;
+  height: 33.15px;
+  left: 319px;
+  top: 41px;
+}
+
+.addevent-header {
+  position: absolute;
+  width: 200px;
+  height: 38px;
+  left: 5px;
+  top: 128px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #000000;
+}
+
+.line {
+  border-top: 2px solid #A49E9E;
+  width: 321px;
+  position: absolute;
+  left: calc(50% - 160px);
+  top: 197px;
+}
+
+.rectangle {
+  position: absolute;
+  width: 330px;
+  height: 435px;
+  left: 22px;
+  top: 224px;
+  background: #D9B8CB;
+  border-radius: 15px;
+}
+
+.activity_name {
+  background-color: #ffffff;
+}
+
+.activity_name label {
+  position: absolute;
+  width: 150px;
+  height: 18px;
+  left: 47px;
+  top: 248px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.activity_name input[type="text"] {
+  position: absolute;
+  width: 296px;
+  height: 32px;
+  left: 39px;
+  top: 269px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+
+.city {
+  background-color: #ffffff;
+}
+
+.city label {
+  position: absolute;
+  width: 150px;
+  height: 18px;
+  left: 47px;
+  top: 309px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.city input[type="text"] {
+  position: absolute;
+  width: 140px;
+  height: 32px;
+  left: 39px;
+  top: 329px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+.zipcode {
+  background-color: #ffffff;
+}
+
+.zipcode label {
+  position: absolute;
+  width: 150px;
+  height: 18px;
+  left: 203px;
+  top: 309px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.zipcode input[type="text"] {
+  position: absolute;
+  width: 140px;
+  height: 32px;
+  left: 195px;
+  top: 329px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+
+.address {
+  background-color: #ffffff;
+}
+
+.address label {
+  position: absolute;
+  width: 150px;
+  height: 18px;
+  left: 47px;
+  top: 372px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.address input[type="text"] {
+  position: absolute;
+  width: 296px;
+  height: 32px;
+  left: 39px;
+  top: 391px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+
+.numofvol {
+  background-color: #ffffff;
+}
+
+.numofvol label {
+  position: absolute;
+  width: 200px;
+  height: 18px;
+  left: 47px;
+  top: 432px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.numofvol input[type="text"] {
+  position: absolute;
+  width: 296px;
+  height: 32px;
+  left: 39px;
+  top: 451px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+
+.startdate {
+  background-color: #ffffff;
+}
+
+.startdate label {
+  position: absolute;
+  width: 150px;
+  height: 18px;
+  left: 47px;
+  top: 493px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.startdate input[type="date"] {
+  position: absolute;
+  width: 140px;
+  height: 32px;
+  left: 39px;
+  top: 513px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+
+
+.enddate {
+  background-color: #ffffff;
+}
+
+.enddate label {
+  position: absolute;
+  width: 150px;
+  height: 18px;
+  left: 203px;
+  top: 493px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.enddate input[type="date"] {
+  position: absolute;
+  width: 140px;
+  height: 32px;
+  left: 195px;
+  top: 513px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+
+input[type="submit"] {
+  position: absolute;
+  width: 137px;
+  height: 31px;
+  top: 597px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  background: #993E73;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
