@@ -75,7 +75,7 @@
   <div class="name"><?=$name?></div>
   <div class="orgType"><?=$type?></div>
   <div class="orgID"><?=$orgID?></div>
-  <div class="street"><?=$street. '<br>' .$city. ', ' .$zipcode?></div>
+  <div class="street"><?=$street. ' ' .$city. ' ' .$zipcode?></div>
 
 </body>
 

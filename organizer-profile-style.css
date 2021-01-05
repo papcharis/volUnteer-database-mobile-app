@@ -181,17 +181,16 @@ mark {
 
 .street{
   position: absolute;
-  width: 175px;
-  height: 15px;
-  left: 96px;
-  top: 531px;
+  width: 223px;
+  height: 37px;
+  left: 116px;
+  top: 532px;
 
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  text-align: center;
 
   color: #544A4A;
 }
