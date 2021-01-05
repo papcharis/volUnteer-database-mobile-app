@@ -49,9 +49,10 @@ mark {
 .rectangle {
   position: absolute;
   width: 321px;
-  height: 397px;
-  left: calc(50% - 160px);
-  top: 139px;
+  height: 589px;
+  left: 25px;
+  top: 129px;
+
   background: #FFC59D;
   border-radius: 15px;
 }
@@ -91,19 +92,22 @@ mark {
 }
 
 .line {
-  border-top: 2px solid #A49E9E;
-  width: 200px;
   position: absolute;
-  left: calc(50% - 100px);
-  top: 360px;
+  width: 200px;
+  height: 0px;
+  left: 88px;
+  top: 414.31px;
+
+  border: 1px solid #A49E9E;
 }
 
 .profile-icon-1 {
   position: absolute;
-  width: 20px;
-  height: 23.08px;
-  left: 58px;
-  top: 397px;
+  width: 30.67px;
+  height: 20px;
+  left: 57px;
+  top: 436px;
+
 }
 
 .profile-icon-2 {
@@ -111,7 +115,7 @@ mark {
   width: 20px;
   height: 8.23px;
   left: 61px;
-  top: 444.26px;
+  top: 486.26px;
 }
 
 .profile-icon-3 {
@@ -119,5 +123,75 @@ mark {
   width: 30.56px;
   height: 37.84px;
   left: 65px;
-  top: 486px;
+  top: 534px;
+}
+
+.name{
+  position: absolute;
+  width: 305px;
+  height: 93px;
+  left: 35px;
+  top: 310px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  justify-content: center;
+
+  color: #000000;
+
+}
+
+.orgType{
+  position: absolute;
+  width: 121px;
+  height: 18px;
+  left: 116px;
+  top: 438px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #544A4A;
+}
+
+.orgID{
+  position: absolute;
+  width: 78px;
+  height: 18px;
+  left: 116px;
+  top: 490px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #544A4A;
+}
+
+.street{
+  position: absolute;
+  width: 175px;
+  height: 15px;
+  left: 96px;
+  top: 531px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #544A4A;
 }

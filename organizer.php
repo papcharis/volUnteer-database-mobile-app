@@ -15,6 +15,16 @@
 
 <body>
 
+  <?php
+    // We need to use sessions, so you should always start sessions using the below code.
+    session_start();
+    // If the user is not logged in redirect to the login page...
+    if (!isset($_SESSION['loggedin'])) {
+      header('Location: index.html');
+      exit;
+    }
+  ?>
+
   <a href="logout.php">
     <div class="logout">
       <img src="./images/logout-icon.svg" alt="" />

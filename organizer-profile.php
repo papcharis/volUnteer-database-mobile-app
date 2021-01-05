@@ -1,3 +1,32 @@
+<?php
+  session_start();
+
+  if(!isset($_SESSION['loggedin'])){
+    header('Location:login.html');
+    exit;
+  }
+
+  include 'db_connection.php';
+  $conn = open_con();
+
+  $stmt = $conn->prepare('SELECT Name, Type, organizer_profile.organizer_ID, Street, City, ZipCode
+                          FROM organizer_profile JOIN accountso on organizer_profile.organizer_ID = accountso.organizer_ID
+                          WHERE username = ?');
+
+  $stmt->bind_param('s',$_SESSION['username']);
+  $stmt->execute();
+  $stmt->store_result();
+  if($stmt->num_rows>0){
+    $stmt->bind_result($name,$type,$orgID,$street,$city,$zipcode);
+    $stmt->fetch();
+  }
+  else{
+    echo "Query did not work out.";
+  }
+
+  $stmt->close();
+?>
+
 <!DOCTYPE html>
 <html lang='en'>
 
@@ -43,6 +72,10 @@
   <div class="profile-icon-3">
     <img src="./images/loc-icon.svg" alt="" />
   </div>
+  <div class="name"><?=$name?></div>
+  <div class="orgType"><?=$type?></div>
+  <div class="orgID"><?=$orgID?></div>
+  <div class="street"><?=$street. '<br>' .$city. ', ' .$zipcode?></div>
 
 </body>
 
