@@ -13,6 +13,69 @@
 </head>
 
 <body>
+  <?php 
+    session_start();
+    $va = $_GET["ActName"];
+
+    include 'db_connection.php';
+    $conn = open_con();
+
+    $stmt = $conn->prepare('SELECT First_Name FROM volunteer_profile WHERE username=?');
+    $stmt->bind_param('s',$_SESSION['username']);
+    $stmt->execute();
+    $stmt->store_result();
+    if($stmt->num_rows>0){
+      $stmt->bind_result($fname);
+      $stmt->fetch();
+    }
+    else{
+      echo "Query did not work out.";
+    }
+    $stmt2 = $conn->prepare('SELECT Activity_ID FROM voluntary_activity WHERE ActName=?');
+    $stmt2->bind_param('s',$va);
+    $stmt2->execute();
+    $stmt2->store_result();
+    if($stmt2->num_rows>0){
+      $stmt2->bind_result($actid);
+      $stmt2->fetch();
+    }
+    else{
+      echo "Query did not work out.";
+    }
+
+    echo '<div class="title" style = "position: absolute;
+            width: auto;
+            height: 18px;
+            left: calc(50% - 155px);
+            top: 398px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            text-transform: uppercase;
+            line-height: 29px;
+            text-align: center;
+            color: #000000;">';
+    echo  $va;
+    echo '</div>';
+    echo '<div class="welcome" style = "position: absolute;
+            width: 300px;
+            height: 20px;
+            left: 49px;
+            top: 551px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: #000000;">';
+    echo 'Hello ';
+    echo  $fname;
+    echo '! A Review has a special importance for us!';
+    echo '</div>';
+
+  ?>
+
 
   <div class="logo-image">
     <img src="./images/logo.png" alt="" />
@@ -28,18 +91,35 @@
   </div>
   <div class="line"></div>
   <div class="rectangle-1"></div>
-  <a href="">
+  <!-- <a href="">
     <div class="send"></div>
     <div class="send-1">
       Send
     </div>
-  </a>
+  </a> -->
   <div class="text-1">
     Review:
   </div>
   <div class="text-2">
     Rating:
   </div>
+
+
+  <form action="review-insert.php?actid=<?php echo $actid ?>" method="post">
+    <div class="Rating">
+      <select name="Rating" id="Rating" require>
+      <option value="0">0</option><option value="1">1</option><option value="2">2</option>
+      <option value="3">3</option><option value="4">4</option><option value="5">5</option>
+      </select>
+    </div>
+    <div class="ReviewTextBox">
+      <p>
+        <input type="text" name="ReviewTextBox" id="ReviewTextBox">
+      </p>
+    </div>
+    <input type="submit" value="Send">
+  </form>
 </body>
+
 
 </html>

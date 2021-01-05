@@ -120,7 +120,7 @@
                         '.$record[1].'
                         </div>';
 
-                        echo '<a href="./review.php">
+                        echo '<a href="./review.php?ActName='.urldecode($record[0]).'">
                             <div class="review" style = "
                             top: '.$ButtonPos.'px;
                             "></div>
