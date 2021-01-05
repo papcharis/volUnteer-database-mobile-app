@@ -77,7 +77,7 @@
   <form action="apply-insert.php?actid=<?php echo $actid ?>" method="post">
     <div class="motivationalLetter">
       <p>
-          <input type="text" name="motivationalLetter" id="motivationalLetter">
+          <input type="text" name="motivationalLetter" placeholder="Tell us why you want to participate.." id="motivationalLetter">
       </p>
     </div>
       <input type="submit" value="Send">

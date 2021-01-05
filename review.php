@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <?php 
+  <?php
     session_start();
     $va = $_GET["ActName"];
 
@@ -50,7 +50,7 @@
             top: 398px;
             font-family: Montserrat;
             font-style: normal;
-            font-weight:600px;
+            font-weight: 600;
             font-size: 20px;
             text-transform: uppercase;
             line-height: 29px;
@@ -91,7 +91,7 @@
   </div>
   <div class="line"></div>
   <div class="rectangle-1"></div>
- 
+
   <div class="text-1">
     Review:
   </div>

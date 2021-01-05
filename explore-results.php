@@ -126,14 +126,26 @@
   }
 }
   else{
-    echo "THERE ARE NO ACTIVITIES RELATED TO YOUR SEARCH";
+    echo '<div class="locationText" style = "position: absolute;
+              width: 320px;
+              height: 18px;
+              left: 25px;
+              top: 222px;
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 20px;
+              text-align: center;
+              color: #000000;">';
+    echo "There are no activities related to your Search!";
+    echo '</div>';
   }
   ?>
 
   <div class="search">
     <img src="./images/search_icon.svg" alt="" />
   </div>
-  <div class="line"></div>
-  <div class="results-text">Results for: '<?= $search?> '</div>
+  <div class="results-text">Results for: '<?= $search?>'</div>
 </body>
 </html>

@@ -87,7 +87,6 @@ mark {
   color: #000000;
 }
 
-
 .rectangle-1 {
   position: absolute;
   width: 321px;
@@ -151,7 +150,6 @@ mark {
   color: #000000;
 }
 
-
 .Rating {
   background-color: #ffffff;
 }
@@ -177,11 +175,18 @@ mark {
   height: 23px;
   left: 120px;
   top: 512px;
-  background: #ffffff;
-  border-radius: 5px;
+  background: rgba(51, 108, 131, 0.35);
+  border: 1px solid rgba(51, 108, 131, 0.9);
+  border-radius: 7px;
   border: true;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  color: #544A4A;
+  padding-left: 10px;
 }
-
 
 .ReviewTextBox input[type="text"] {
   position: absolute;
@@ -193,9 +198,16 @@ mark {
   border: 1px solid rgba(51, 108, 131, 0.9);
   box-sizing: border-box;
   border-radius: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  color: #544A4A;
+  padding-left: 20px;
 }
-input[type="submit"] {
 
+input[type="submit"] {
   position: absolute;
   width: 50px;
   height: 18px;

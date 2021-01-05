@@ -27,13 +27,13 @@
   <div class="explore-header">
     Explore
   </div>
-  <div class="line2"></div>
+  <div class="line"></div>
   <div class="upcoming">
     Upcoming Voluntary Activities
   </div>
 	<form action="explore-results.php" method="GET" class="search_rectangle">
-		<input type="text" name="search" />
-		<input type="submit" value="Search" />
+		<input type="text" placeholder="Search something.." name="search" />
+		<input type="submit" value="" />
 	</form>
 
 <?php
@@ -51,15 +51,15 @@
 
   if ($result->num_rows > 0) {
     // output data of each row
-    $RecPos = 224;
-    $DurationPos= 254;
-    $OrgPos = 274;
-    $LocPos = 297;
+    $RecPos = 316;
+    $DurationPos= 346;
+    $OrgPos = 366;
+    $LocPos = 389;
 
-    $text1 = 228;
-    $text2 = 254;
-    $text3 = 276;
-    $text4 = 297;
+    $text1 = 320;
+    $text2 = 346;
+    $text3 = 368;
+    $text4 = 389;
 
 
     while($row = $result->fetch_assoc()) {

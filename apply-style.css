@@ -111,19 +111,27 @@ mark {
   line-height: 22px;
   color: #000000;
 }
+
 .motivationalLetter input[type="text"] {
   position: absolute;
   width: 288px;
   height: 48px;
   left: 42px;
-  top: 540px;
+  top: 535px;
   background: rgba(255, 129, 41, 0.39);
   border: 1px solid rgba(255, 129, 41, 0.8);
   box-sizing: border-box;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 13px;
+  color: #544A4A;
   border-radius: 10px;
+  padding-left: 10px;
 }
-input[type="submit"] {
 
+input[type="submit"] {
   position: absolute;
   width: 50px;
   height: 18px;

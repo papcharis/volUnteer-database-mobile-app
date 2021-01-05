@@ -94,7 +94,7 @@ mark {
   font-size: 18px;
   line-height: 22px;
 }
-.num {
+/* .num {
   position: absolute;
   width: 113px;
   height: 44px;
@@ -121,7 +121,7 @@ mark {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-}
+} */
 
 .rectangle-2 {
   position: absolute;

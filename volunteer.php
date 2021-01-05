@@ -50,16 +50,13 @@
   <p class="day" >
     <?php
         echo $date= date("D") ;
-    ?>
-  </p>
-  <p class="num" >
-    <?php
+        echo '&nbsp;';
+        echo '<span style="font-size: 23px;font-weight:600">';
         echo $date= date("d") ;
-    ?>
-  </p>
-  <p class="month" >
-    <?php
+        echo '</span>';
+        echo '&nbsp;';
         echo $date= date("M") ;
+
     ?>
   </p>
 </div>
