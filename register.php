@@ -17,7 +17,7 @@ if (empty($_POST['first_name']) || empty($_POST['last_name']) || empty($_POST['u
 }
 
 // We need to check if the account with that username exists.
-if ($stmt = $con->prepare('SELECT username FROM accounts WHERE username = ?')) {
+if ($stmt = $con->prepare('SELECT username FROM accountsV WHERE username = ?')) {
 	// Bind parameters (s = string, i = int, b = blob, etc), hash the password using the PHP password_hash function.
 	$stmt->bind_param('s', $_POST['username']);
 	$stmt->execute();
@@ -29,7 +29,7 @@ if ($stmt = $con->prepare('SELECT username FROM accounts WHERE username = ?')) {
 	}
     else {
           // Username doesnt exists, insert new account
-      if ($stmt = $con->prepare('INSERT INTO accounts (username, password,email) VALUES (?, ?, ?)')) {
+      if ($stmt = $con->prepare('INSERT INTO accountsV (username, password,email) VALUES (?, ?, ?)')) {
         // We do not want to expose passwords in our database, so hash the password and use password_verify when a user logs in.
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
         $stmt->bind_param('sss', $_POST['username'], $password, $_POST['email']);
