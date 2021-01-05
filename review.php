@@ -50,7 +50,7 @@
             top: 398px;
             font-family: Montserrat;
             font-style: normal;
-            font-weight: 600;
+            font-weight:600px;
             font-size: 20px;
             text-transform: uppercase;
             line-height: 29px;
@@ -65,7 +65,7 @@
             top: 551px;
             font-family: Montserrat;
             font-style: normal;
-            font-weight: 600;
+            font-weight:600px;
             font-size: 14px;
             line-height: 18px;
             color: #000000;">';
@@ -91,12 +91,7 @@
   </div>
   <div class="line"></div>
   <div class="rectangle-1"></div>
-  <!-- <a href="">
-    <div class="send"></div>
-    <div class="send-1">
-      Send
-    </div>
-  </a> -->
+ 
   <div class="text-1">
     Review:
   </div>

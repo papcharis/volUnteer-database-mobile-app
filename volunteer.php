@@ -85,7 +85,7 @@
   </a>
 
 
-  <a href="./myevents-inprogress.php">
+  <a href="./myevents.php">
     <div class="rectangle-4"></div>
     <div class="button-4">
       <img src="./images/button-4.svg" alt="" />
