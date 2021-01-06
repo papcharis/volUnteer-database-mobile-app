@@ -55,20 +55,6 @@ mark {
   top: 41px;
 }
 
-.myevents-header {
-  position: absolute;
-  width: 350px;
-  height: 38px;
-  left: 5px;
-  top: 128px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 37px;
-  text-align: center;
-  color: #000000;
-}
 
 .applied a {
   font-family: Montserrat;
@@ -77,7 +63,7 @@ mark {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #FF5D09;
+  color: #A49E9E;
   text-decoration: none;
   position: absolute;
   width: 133px;
@@ -93,7 +79,7 @@ mark {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #A49E9E;
+  color: #89205D;
   text-decoration: none;
   position: absolute;
   width: 133px;
@@ -102,15 +88,30 @@ mark {
   top: 183px;
 }
 
+.rejected a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #A49E9E;
+  text-decoration: none;
+  position: absolute;
+  width: 133px;
+  height: 34px;
+  left: calc(50% + 50px);
+  top: 183px;
+}
 
 .dot {
   height: 8px;
   width: 8px;
-  background: #FF5D09;
+  background: #89205D;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  left: 102px;
+  left:248px;
   top: 212px;
 }
 
@@ -122,6 +123,21 @@ mark {
   top: 232px;
 }
 
+.myevents-header {
+  position: absolute;
+  width: 350px;
+  height: 38px;
+  left: 5px;
+  top: 128px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: #000000;
+}
+
 .rectangle {
   position: absolute;
   width: 321px;
@@ -130,21 +146,6 @@ mark {
   top: 279px;
   background: rgba(255, 129, 41, 0.46);
   border-radius: 15px;
-}
-
-.Tik {
-  position: absolute;
-  width: 10px;
-  height: 13px;
-  left: calc(50% - 142px);
-}
-
-.Xi {
-  position: absolute;
-  width: 10px;
-  height: 13px;
-  left: calc(50% - 147px);
-  top: 32px;
 }
 
 .Name{
@@ -172,6 +173,21 @@ mark {
   font-size: 13px;
   line-height: 16px;
   width: 300;
+
+  color: #544A4A;
+}
+
+.Role{
+  position: absolute;
+  width: 207px;
+  height: 22px;
+  left: 112px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
 
   color: #544A4A;
 }
