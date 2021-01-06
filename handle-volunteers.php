@@ -63,7 +63,7 @@
     <a href="handle-volunteers-rejected.php?ActID='.urldecode($act_id).'">Rejected</a>
     </div>';
 
-    $sql1 = "SELECT Volunteer_Username FROM applies WHERE Activity_ID='$act_id'";
+    $sql1 = "SELECT Volunteer_Username FROM applies WHERE Activity_ID='$act_id' AND Volunteer_Username NOT IN (SELECT Volunteer_Username FROM hires WHERE Activity_ID='$act_id ')";
     $result = $conn->query($sql1);
 
     $age=0;
