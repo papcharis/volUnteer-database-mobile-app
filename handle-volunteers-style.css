@@ -151,15 +151,14 @@ mark {
   width: 10px;
   height: 13px;
   left: calc(50% - 142px);
-  top: 310px;
 }
 
 .Xi {
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 13px;
   left: calc(50% - 147px);
-  top: 338px;
+  top: 32px;
 }
 
 .Name{

@@ -47,7 +47,7 @@
         $act_name = $record[0];
     } 
 
-    $act_name = strlen($act_name) > 25 ? substr($act_name,0,25)."..." : $act_name;
+    $act_name = strlen($act_name) > 23 ? substr($act_name,0,23)."..." : $act_name;
     echo '<div class="myevents-header">
           '.$act_name.'
           </div>';
@@ -73,8 +73,8 @@
 
       $RecPos = 260;
       $ImPos = 352;
-      $TikPos= 275;
-      $XPos = 310;
+      $TikPos= 295;
+      $XPos = 295;
       $NamePos = 270;
       $AgePos = 285;
 
@@ -112,22 +112,26 @@
 
         echo '<div class="Tik"  style = 
           "top: '.$TikPos.'px;
-           left: 300px;  ">
-              <img src="./images/tik.svg" alt="" />
+           left: 250px;  ">
+              <a href="handle-volunteers-Tik.php?ActID='.urldecode($act_id).'&VolUserName='.$curr_username.'">
+                <img src="./images/tik.svg" alt="" />
+              </a>
            </div>';
 
            echo '<div class="Xi" style = 
            "top: '.$XPos.'px;
             left: 300px;  ">
-           <img src="./images/xi.svg" alt="" />
-          </div>';
+            <a <a href="handle-volunteers-Xi.php?ActID='.urldecode($act_id).'">
+              <img src="./images/xi.svg" alt="" />
+            </a>
+           </div>';
 
-        $RecPos = $RecPos + 120;
-        $ImPos = $ImPos + 120;
-        $TikPos= $TikPos + 120;
-        $XPos = $XPos + 120;
-        $NamePos = $NamePos+120;
-        $AgePos = $AgePos +120;
+        $RecPos = $RecPos + 100;
+        $ImPos = $ImPos + 100;
+        $TikPos= $TikPos + 100;
+        $XPos = $XPos + 100;
+        $NamePos = $NamePos+100;
+        $AgePos = $AgePos +100;
       }
 
 
