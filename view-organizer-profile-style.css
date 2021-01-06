@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo-image {
+  position: absolute;
+  width: 70px;
+  height: 72.42px;
+  left: 13px;
+  top: 17px;
+}
+
+
+.logo a {
+  font-family: Baloo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  text-decoration: none;
+  position: absolute;
+  width: 125px;
+  height: 33px;
+  left: 80px;
+  top: 39px;
+}
+
+mark {
+  color: #6B9C9C;
+  background: none;
+}
+
+.myprofile {
+  position: absolute;
+  width: 33px;
+  height: 33.15px;
+  left: 319px;
+  top: 41px;
+}
+
+.rectangle {
+  position: absolute;
+  width: 321px;
+  height: 440px;
+  left: 25px;
+  top: 129px;
+
+  background: #FFC59D;
+  border-radius: 15px;
+}
+
+
+.profile-pic {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 110px;
+  top: 153px;
+}
+
+.line {
+  position: absolute;
+  width: 200px;
+  height: 0px;
+  left: 88px;
+  top: 414.31px;
+
+  border: 1px solid #A49E9E;
+}
+
+.profile-icon-1 {
+  position: absolute;
+  width: 30.67px;
+  height: 20px;
+  left: 57px;
+  top: 436px;
+
+}
+
+
+.profile-icon-3 {
+  position: absolute;
+  width: 30.56px;
+  height: 37.84px;
+  left: 65px;
+  top: 486.26px;
+}
+
+.name{
+  position: absolute;
+  width: 305px;
+  height: 93px;
+  left: 35px;
+  top: 310px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  justify-content: center;
+
+  color: #000000;
+
+}
+
+.orgType{
+  position: absolute;
+  width: 121px;
+  height: 18px;
+  left: 116px;
+  top: 438px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #544A4A;
+}
+
+
+.street{
+  position: absolute;
+  width: 223px;
+  height: 37px;
+  left: 116px;
+  top: 490px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #544A4A;
+}

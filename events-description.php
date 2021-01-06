@@ -19,9 +19,10 @@
   include 'db_connection.php';
   $conn = open_con();
 
-  $sql = "SELECT * FROM voluntary_activity LEFT JOIN Organizer_Profile ON Organizer_Profile.organizer_ID=voluntary_activity.organizer_ID
+  $sql = "SELECT ActName,voluntary_activity.City,voluntary_activity.Street,voluntary_activity.ZipCode,VolunteersNeeded,Start_Date,End_Date,Name FROM voluntary_activity JOIN Organizer_Profile ON Organizer_Profile.organizer_ID=voluntary_activity.organizer_ID
           WHERE ActName = '$va'" ;
   $result = $conn->query($sql);
+
 
   if ($result->num_rows > 0) {
   // output data of each row
@@ -50,7 +51,9 @@
               font-style: normal;
               font-weight: normal;
               font-size: 14px;
-              line-height: 15px;
+              display: flex;
+              align-items: flex-end;
+              line-height: 14px;
               color: #000000;">';
       echo  $row["Name"];
       echo '</div>';
@@ -100,9 +103,12 @@
     white-space: nowrap;
     text-overflow: ellipsis;">';
      $out = strlen($row["Street"]) > 25 ? substr($row["Street"],0,25)."..." : $row["Street"];
-      echo $out;
+     if( $out == NULL ){
+         echo '-';
+     }
+     else{echo $out;}
       echo '<br>';
-      echo $row["City"].'&nbsp;,&nbsp;'.$row["ZipCode"];
+      echo $row["City"].'&nbsp;&nbsp;'.$row["ZipCode"];
       echo '</div>';
       echo '<a href="./apply.php?ActName='.urldecode($row["ActName"]).'">';
       echo  '<div class="apply">';
@@ -111,7 +117,7 @@
       echo    'Apply';
       echo  '</div>';
       echo '</a>';
-
+      $va2=$row["Name"];
   }
 } else {
   echo "0 results";
@@ -131,7 +137,7 @@
   </div>
   <div class="line"></div>
   <div class="rectangle-1"></div>
-  <a href="">
+  <a href="view-organizer-profile.php?orgname=<?php echo $va2 ?>">
     <div class="viewprofile"></div>
     <div class="viewprofile-1">
       view profile
