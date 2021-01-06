@@ -6,8 +6,8 @@
             header('Location: login.html');
             exit;
         }
-          
-        
+
+
         $username = $_SESSION['username'];
         $org_id=0;
         $name="";
@@ -17,7 +17,7 @@
         if ($sql0_result->num_rows > 0) {
             $record = $sql0_result->fetch_row();
             $org_id = $record[0];
-        }  
+        }
 
         $sql1 = "SELECT Name FROM organizer_profile WHERE organizer_ID='$org_id'";
         $sql1_result = $conn->query($sql1);
@@ -28,7 +28,7 @@
         else {
             echo "QUERY ERROR";
         }
-        
+
 
         $sql = "SELECT ActName, Activity_ID, City, Street, ZipCode, VolunteersNeeded, Start_Date, End_Date FROM voluntary_activity
         WHERE Organizer_ID= '$org_id'";
@@ -117,17 +117,17 @@
                                 <img src="./images/arrow-small.svg" alt="" />
                             </div>
                         </a>';
-                    
-                        $RecPos = $RecPos +120;
-                        $ActNamePos = $ActNamePos + 120;
-                        $DurationPos= $DurationPos + 120;
-                        $VolNeededPos = $VolNeededPos + 120;
-                        $LocPos = $LocPos + 120;
-                        $BtnsPos = $BtnsPos + 120;
-                        $BtnsTextsPos = $BtnsTextsPos +120;
-                        $text2 = $text2 + 120;
-                        $text3 = $text3 + 120;
-                        $text4 = $text4 + 120;
+
+                        $RecPos = $RecPos +215;
+                        $ActNamePos = $ActNamePos + 215;
+                        $DurationPos= $DurationPos + 215;
+                        $VolNeededPos = $VolNeededPos + 215;
+                        $LocPos = $LocPos + 215;
+                        $BtnsPos = $BtnsPos + 215;
+                        $BtnsTextsPos = $BtnsTextsPos +215;
+                        $text2 = $text2 + 215;
+                        $text3 = $text3 + 215;
+                        $text4 = $text4 + 215;
                     }
                 }
             }
@@ -204,7 +204,7 @@
                         //         <img src="./images/arrow-small.svg" alt="" />
                         //     </div>
                         // </a>';
-                    
+
                         $RecPos = $RecPos +120;
                         $ActNamePos = $ActNamePos + 120;
                         $DurationPos= $DurationPos + 120;
@@ -286,17 +286,17 @@
                                 <img src="./images/arrow-small.svg" alt="" />
                             </div>
                         </a>';
-                    
-                        $RecPos = $RecPos +120;
-                        $ActNamePos = $ActNamePos + 120;
-                        $DurationPos= $DurationPos + 120;
-                        $VolNeededPos = $VolNeededPos + 120;
-                        $LocPos = $LocPos + 120;
-                        $BtnsPos = $BtnsPos + 120;
-                        $BtnsTextsPos = $BtnsTextsPos +120;
-                        $text2 = $text2 + 120;
-                        $text3 = $text3 + 120;
-                        $text4 = $text4 + 120;
+
+                        $RecPos = $RecPos +215;
+                        $ActNamePos = $ActNamePos + 215;
+                        $DurationPos= $DurationPos + 215;
+                        $VolNeededPos = $VolNeededPos + 215;
+                        $LocPos = $LocPos + 215;
+                        $BtnsPos = $BtnsPos + 215;
+                        $BtnsTextsPos = $BtnsTextsPos +215;
+                        $text2 = $text2 + 215;
+                        $text3 = $text3 + 215;
+                        $text4 = $text4 + 215;
                     }
                 }
             }

@@ -47,9 +47,7 @@ body {
   height: 0px;
   left: 27px;
   top: 188px;
-
-  border: 2px solid #A49E9E;
-  transform: rotate(-0.18deg);
+  border-top: 2px solid #A49E9E;
 }
 
 .small-line{
@@ -57,8 +55,7 @@ body {
   width: 146.01px;
   height: 0px;
   left: 42px;
-
-  border: 1px solid #000000;
+  border-top: 2px solid #000000;
 }
 
 .name-text{
@@ -111,7 +108,7 @@ body {
   width: 223px;
   height: 18px;
   left: 42px;
-  
+
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
