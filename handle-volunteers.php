@@ -23,66 +23,126 @@
   <div class="myevents">
     <img src="./images/myevents.svg" alt="" />
   </div>
-  <div class="myevents-header">
-    My Events
-  </div>
-  <div class="applied">
-    <a href="./organizer-myevents.php">Applied</a>
-  </div>
-  <div class="chosen">
-    <a href="./organizer-myevents-comp.php">Chosen</a>
-  </div>
-  <div class="rejected">
-    <a href="./organizer-myevents-comp.php">Rejected</a>
-  </div>
+
   <span class="dot"></span>
   <div class="line"></div>
-  <div class="rectangle"></div>
-  <div class="duration">
-    <img src="./images/tik.svg" alt="" />
-  </div>  <div class="staff">
-    <img src="./images/xi.svg" alt="" />
-  </div>
-  <div class="profile-pic">
-  <?php
-    $bg = array('profile-small-1.png', 'profile-small-2.png', 'profile-small-3.png', 'profile-small-4.png', 'profile-small-5.png', 'profile-small-6.png');
-    $i = rand(0, count($bg)-1);
-    $selectedBg = "$bg[$i]";
-  ?>
-  </div>
-  <style type="text/css">
-    <!--
-      .profile-pic{
-          background: url(images/<?php echo $selectedBg; ?>) no-repeat;
-          position: absolute;
-          width: 160px;
-          height: 160px;
-          top: 243px;
-          left: 50%;
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-        }
-        >
-  </style>
-  <a href="">
-    <div class="edit"></div>
-    <div class="edit-1">
-      Edit Event
-    </div>
-    <div class="edit-2">
-      <img src="./images/arrow-small.svg" alt="" />
-    </div>
-  </a>
-  <a href="">
-    <div class="handle"></div>
-    <div class="handle-1">
-      Handle Volunteers
-    </div>
-    <div class="handle-2">
-      <img src="./images/arrow-small.svg" alt="" />
-    </div>
-  </a>
 
+  <?php
+    include 'db_connection.php';
+
+    $conn = open_con();
+    
+    session_start();
+    if (!isset($_SESSION['loggedin'])) {
+        header('Location: login.html');
+        exit;
+    }
+
+    $act_id = $_GET["ActID"];
+    
+    $sql0 = "SELECT ActName FROM voluntary_activity WHERE Activity_ID='$act_id'";
+    $sql0_result = $conn->query($sql0);
+    if ($sql0_result->num_rows > 0) {
+        $record = $sql0_result->fetch_row();
+        $act_name = $record[0];
+    } 
+
+    $act_name = strlen($act_name) > 25 ? substr($act_name,0,25)."..." : $act_name;
+    echo '<div class="myevents-header">
+          '.$act_name.'
+          </div>';
+
+
+    echo '<div class="applied">
+    <a href="handle-volunteers.php?ActID='.urldecode($act_id).'">Applied </a>
+    </div>';
+    echo '<div class="chosen">
+    <a href="handle-volunteers-choosen.php?ActID='.urldecode($act_id).'">Chosen</a>
+    </div>';
+    echo '<div class="rejected">
+    <a href="handle-volunteers-rejected.php?ActID='.urldecode($act_id).'">Rejected</a>
+    </div>';
+
+    $sql1 = "SELECT Volunteer_Username FROM applies WHERE Activity_ID='$act_id'";
+    $result = $conn->query($sql1);
+
+    $age=0;
+    $sex='';
+
+    if ($result->num_rows > 0) {
+
+      $RecPos = 260;
+      $ImPos = 352;
+      $TikPos= 275;
+      $XPos = 310;
+      $NamePos = 270;
+      $AgePos = 285;
+
+
+
+      while($row = $result->fetch_assoc()) {
+        $curr_username = $row['Volunteer_Username'];
+
+        $sql2 = "SELECT Age, Sex , First_Name, Last_Name FROM volunteer_profile WHERE username='$curr_username'";
+        $sql2_result = $conn->query($sql2);
+        if ($sql2_result->num_rows > 0) {
+          $record = $sql2_result->fetch_row();
+          $age = $record[0];
+          $sex= $record[1];
+          $name = $record[2] . " " .$record[3];
+        }
+        else {
+            echo "QUERY ERROR";
+        } 
+
+        echo '<div class="rectangle" style="top: '.$RecPos.'px"></div>';
+        if($sex == 'F') {
+          echo '<div class="image" style="top: '.$ImPos.'px">
+          <img src=./images/profile-small-1.png alt="" />
+          </div>';
+        }
+        else{
+          echo '<div class="image" style="top: '.$ImPos.'px">
+          <img src=./images/profile-small-2.png alt="" />
+          </div>';
+        }
+
+        echo '<div class="Name" style="top:'.$NamePos.'px"> '.$name.' </div>';
+        echo '<div class="Age" style="top:'.$AgePos.'px">Age = '.$age.' </div>';
+
+        echo '<div class="Tik"  style = 
+          "top: '.$TikPos.'px;
+           left: 300px;  ">
+              <img src="./images/tik.svg" alt="" />
+           </div>';
+
+           echo '<div class="Xi" style = 
+           "top: '.$XPos.'px;
+            left: 300px;  ">
+           <img src="./images/xi.svg" alt="" />
+          </div>';
+
+        $RecPos = $RecPos + 120;
+        $ImPos = $ImPos + 120;
+        $TikPos= $TikPos + 120;
+        $XPos = $XPos + 120;
+        $NamePos = $NamePos+120;
+        $AgePos = $AgePos +120;
+      }
+
+
+    }
+
+
+  
+
+
+
+    
+
+
+    $conn->close();
+  ?>
 
 </body>
 

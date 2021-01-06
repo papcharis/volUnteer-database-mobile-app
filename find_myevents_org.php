@@ -5,7 +5,7 @@
         if (!isset($_SESSION['loggedin'])) {
             header('Location: login.html');
             exit;
-          }
+        }
           
         
         $username = $_SESSION['username'];
@@ -30,7 +30,7 @@
         }
         
 
-        $sql = "SELECT ActName, City, Street, ZipCode, VolunteersNeeded, Start_Date, End_Date FROM voluntary_activity
+        $sql = "SELECT ActName, Activity_ID, City, Street, ZipCode, VolunteersNeeded, Start_Date, End_Date FROM voluntary_activity
         WHERE Organizer_ID= '$org_id'";
 
         $result = $conn->query($sql);
@@ -108,7 +108,7 @@
                                 <img src="./images/arrow-small.svg" alt="" />
                             </div>
                         </a>';
-                        echo '<a href="handle-volunteers.php">
+                        echo '<a href="handle-volunteers.php?ActID='.urldecode($row['Activity_ID']).'">
                             <div class="handle" style= " top: '.$BtnsTextsPos.'px"></div>
                             <div class="handle-1" style= " top: '.$BtnsPos.'px">
                             Handle Volunteers
@@ -277,7 +277,7 @@
                                 <img src="./images/arrow-small.svg" alt="" />
                             </div>
                         </a>';
-                        echo '<a href="handle-volunteers.php">
+                        echo '<a href="handle-volunteers.php?ActID='.urldecode($row['Activity_ID']).'">
                             <div class="handle" style= " top: '.$BtnsTextsPos.'px"></div>
                             <div class="handle-1" style= " top: '.$BtnsPos.'px">
                             Handle Volunteers

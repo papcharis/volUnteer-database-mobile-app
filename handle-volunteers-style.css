@@ -16,6 +16,16 @@ body {
   top: 17px;
 }
 
+.image{
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: 115px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
 .logo a {
   font-family: Baloo;
   font-style: normal;
@@ -47,14 +57,14 @@ mark {
 
 .myevents-header {
   position: absolute;
-  width: 200px;
+  width: 350px;
   height: 38px;
   left: 5px;
   top: 128px;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 25px;
   line-height: 37px;
   text-align: center;
   color: #000000;
@@ -72,7 +82,7 @@ mark {
   position: absolute;
   width: 133px;
   height: 34px;
-  left: calc(50% - 173px);
+  left: calc(50% - 182px);
   top: 183px;
 }
 
@@ -88,7 +98,7 @@ mark {
   position: absolute;
   width: 133px;
   height: 34px;
-  left: calc(50% - 64px);
+  left: calc(50% - 68px);
   top: 183px;
 }
 .rejected a {
@@ -103,7 +113,7 @@ mark {
   position: absolute;
   width: 133px;
   height: 34px;
-  left: calc(50% - 64px);
+  left: calc(50% + 50px);
   top: 183px;
 }
 
@@ -114,7 +124,7 @@ mark {
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  left: 79px;
+  left: 68px;
   top: 212px;
 }
 
@@ -129,97 +139,54 @@ mark {
 .rectangle {
   position: absolute;
   width: 321px;
-  height: 193px;
+  height: 88px;
   left: calc(50% - 160px);
   top: 279px;
   background: rgba(255, 129, 41, 0.46);
   border-radius: 15px;
 }
 
-.duration {
+.Tik {
   position: absolute;
-  width: 10.4px;
+  width: 10px;
   height: 13px;
   left: calc(50% - 142px);
   top: 310px;
 }
 
-.staff {
+.Xi {
   position: absolute;
-  width: 21px;
-  height: 21px;
+  width: 15px;
+  height: 15px;
   left: calc(50% - 147px);
   top: 338px;
 }
 
-.location {
+.Name{
   position: absolute;
-  width: 9px;
-  height: 14px;
-  left: calc(50% - 140px);
-  top: 370px;
-}
+  width: 300px;
+  height: 20px;
+  left: 112px;
 
-.edit {
-  position: absolute;
-  width: 123px;
-  height: 39px;
-  left: 39px;
-  top: 423px;
-  background: rgba(255, 129, 41, 0.8);
-  border-radius: 15px;
-}
-
-.edit-1 {
-  position: absolute;
-  width: 123px;
-  height: 39px;
-  left: 51px;
-  top: 433px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+
   color: #000000;
 }
 
-.edit-2 {
+.Age {
   position: absolute;
-  width: 123px;
-  height: 39px;
-  left: 143px;
-  top: 434px;
-}
-
-.handle {
-  position: absolute;
-  width: 161px;
-  height: 39px;
-  left: 180px;
-  top: 423px;
-  background: rgba(255, 129, 41, 0.8);
-  border-radius: 15px;
-}
-
-.handle-1 {
-  position: absolute;
-  width: 140px;
-  height: 39px;
-  left: 192px;
-  top: 433px;
+  left: 112px;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 600;
+  font-weight: normal;
   font-size: 13px;
-  line-height: 20px;
-  color: #000000;
-}
+  line-height: 16px;
+  width: 300;
 
-.handle-2 {
-  position: absolute;
-  width: 123px;
-  height: 39px;
-  left: 320px;
-  top: 434px;
+  color: #544A4A;
 }
