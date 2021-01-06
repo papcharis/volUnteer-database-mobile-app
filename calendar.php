@@ -156,7 +156,22 @@ class Calendar {
 
         }
       } else {
-        echo "0 results";
+        echo  '<div class="noresults" style="
+        position: absolute;
+        width: 176px;
+        height: 58px;
+        left: 133px;
+        top: 393px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+        text-align: center;
+        color: #000000;">';
+        echo "There aren't any events this month!";
+        echo  '</div>';
+
       }
     }
 
