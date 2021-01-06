@@ -7,10 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>volUnteer</title>
-  <link rel="stylesheet" href="handle-volunteers-Tik-style.css" />
+  <link rel="stylesheet" href="my-staff-style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Baloo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
 
 <body>
 
@@ -30,7 +29,7 @@
         include 'db_connection.php';
 
         $conn = open_con();
-        
+
         session_start();
         if (!isset($_SESSION['loggedin'])) {
             header('Location: login.html');
@@ -41,21 +40,20 @@
         $vol_username = $_GET["VolUserName"];
         $motivationalLetter = 'Hello';
 
-        echo $vol_username;
-        echo $act_id;
+
         $sql3 = "SELECT motivationalLetter FROM applies WHERE Activity_ID='$act_id' AND Volunteer_Username='$vol_username' ";
         $sql3_result = $conn->query($sql3);
         if ($sql3_result->num_rows > 0) {
             $record = $sql3_result->fetch_row();
             $motivationalLetter = $record[0];
-        } 
+        }
 
         $sql0 = "SELECT ActName FROM voluntary_activity WHERE Activity_ID='$act_id'";
         $sql0_result = $conn->query($sql0);
         if ($sql0_result->num_rows > 0) {
             $record = $sql0_result->fetch_row();
             $act_name = $record[0];
-        } 
+        }
 
         $act_name = strlen($act_name) > 23 ? substr($act_name,0,23)."..." : $act_name;
         echo '<div class="myevents-header">
@@ -72,8 +70,8 @@
         }
         else {
             echo "QUERY ERROR";
-        } 
-        
+        }
+
         $RecPos = 168;
         $ImPos = 257;
         $NamePos = 180;
@@ -114,7 +112,7 @@
             <label for="Days">Days:</label><br>
             <input type="text" name="Days" id="Days">
         </div>
-        
+
         <input type="submit" value="ADD VOLUNTEER">
      </form>
 
