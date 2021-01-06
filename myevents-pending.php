@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>volUnteer</title>
-  <link rel="stylesheet" href="myevents-inprogress-style.css" />
+  <link rel="stylesheet" href="myevents-pending-style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Baloo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
@@ -27,7 +27,7 @@
     My Events
   </div>
   <div class="inprogress">
-    <a href="./myevents-inprogress.php">In-Progress</a>
+    <a href="./myevents-pending.php">Pending</a>
   </div>
   <div class="upcoming">
     <a href="./myevents.php">Up-coming</a>
@@ -45,7 +45,7 @@
     include 'db_connection.php';
     $conn = open_con();
 
-    find_myevents($conn, 'inprogress');
+    find_myevents($conn, 'pending');
     $conn->close();
   ?>
 

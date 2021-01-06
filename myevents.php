@@ -27,7 +27,7 @@
     My Events
   </div>
   <div class="inprogress">
-    <a href="./myevents-inprogress.php">In-Progress</a>
+    <a href="./myevents-pending.php">Pending</a>
   </div>
   <div class="upcoming">
     <a href="./myevents.php">Up-coming</a>
