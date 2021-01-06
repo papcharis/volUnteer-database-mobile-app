@@ -30,16 +30,24 @@
     <a href="./organizer-myevents.php">Up-coming</a>
   </div>
   <div class="completed">
-    <a href="./organizer-myevents-completed.php">Completed</a>
+    <a href="./organizer-myevents-comp.php">Completed</a>
   </div>
+  <div class="inprogress">
+    <a href="./organizer-myevents-inprogress.php">In-Progress</a>
+  </div>
+
   <span class="dot"></span>
   <div class="line"></div>
-  <div class="rectangle"></div>
-  <div class="duration">
-    <img src="./images/duration-small.svg" alt="" />
-  </div>  <div class="location">
-    <img src="./images/location-small.svg" alt="" />
-  </div>
+
+  <?php
+    include 'find_myevents_org.php';
+    include 'db_connection.php';
+    $conn = open_con();
+
+    find_myevents_org($conn, 'completed');
+    $conn->close();
+  ?>
+
 
 </body>
 

@@ -1,4 +1,4 @@
-* {
+*{
   box-sizing: border-box;
 }
 
@@ -67,7 +67,7 @@ mark {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #A49E9E;
+  color: #89205D;
   text-decoration: none;
   position: absolute;
   width: 95px;
@@ -83,7 +83,7 @@ mark {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #FF5D09;
+  color: #A49E9E;
   text-decoration: none;
   position: absolute;
   width: 133px;
@@ -91,7 +91,6 @@ mark {
   left: 121px;
   top: 183px;
 }
-
 
 .completed a {
   font-family: Montserrat;
@@ -112,11 +111,11 @@ mark {
 .dot {
   height: 8px;
   width: 8px;
-  background: #FF5D09;
+  background: #89205D;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  left: 188px;
+  left: 75px;
   top: 212px;
 }
 
@@ -128,14 +127,13 @@ mark {
   top: 232px;
 }
 
-
 .rectangle {
   position: absolute;
   width: 321px;
   height: 193px;
   left: calc(50% - 160px);
   top: 279px;
-  background: rgba(255, 129, 41, 0.46);
+  background: #D9B8CB;
   border-radius: 15px;
 }
 
@@ -201,7 +199,7 @@ mark {
   width: 123px;
   height: 39px;
   left: 39px;
-  background: rgba(255, 129, 41, 0.8);
+  background: #993E73;
   border-radius: 15px;
 }
 
@@ -231,7 +229,7 @@ mark {
   height: 39px;
   left: 180px;
   top: 423px;
-  background: rgba(255, 129, 41, 0.8);
+  background: #993E73;
   border-radius: 15px;
 }
 
@@ -256,3 +254,5 @@ mark {
   left: 320px;
   top: 434px;
 }
+
+

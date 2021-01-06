@@ -60,6 +60,22 @@ mark {
   color: #000000;
 }
 
+.inprogress a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #A49E9E;
+  text-decoration: none;
+  position: absolute;
+  width: 95px;
+  height: 17px;
+  left: 29px;
+  top: 183px;
+}
+
 .upcoming a {
   font-family: Montserrat;
   font-style: normal;
@@ -72,7 +88,7 @@ mark {
   position: absolute;
   width: 133px;
   height: 34px;
-  left: calc(50% - 173px);
+  left: 121px;
   top: 183px;
 }
 
@@ -86,9 +102,9 @@ mark {
   color: #6B9C9C;
   text-decoration: none;
   position: absolute;
-  width: 133px;
-  height: 34px;
-  left: calc(50% - 64px);
+  width: 101px;
+  height: 17px;
+  left: 245px;
   top: 183px;
 }
 
@@ -99,7 +115,7 @@ mark {
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  left: calc(50% - 1px);
+  left: 293px;
   top: 212px;
 }
 
@@ -114,11 +130,28 @@ mark {
 .rectangle {
   position: absolute;
   width: 321px;
-  height: 88px;
+  height: 100px;
   left: calc(50% - 160px);
   top: 279px;
   background: #C1D5D5;
   border-radius: 15px;
+}
+
+.actname {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: calc(50% - 142px);
+  top: 279px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+
+  color: #000000;
 }
 
 .duration {
@@ -128,10 +161,96 @@ mark {
   left: calc(50% - 142px);
   top: 310px;
 }
+
+.staff {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: calc(50% - 144px);
+  top: 338px;
+}
+
 .location {
   position: absolute;
   width: 9px;
   height: 14px;
   left: calc(50% - 142px);
-  top: 335px;
+  top: 370px;
+}
+
+
+.InfoText {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #544A4A;
+  position: absolute;
+  width: auto;
+  left: 65px;
+  top: 280px;
+}
+
+
+.edit {
+  position: absolute;
+  width: 123px;
+  height: 39px;
+  left: 39px;
+  background: rgba(255, 129, 41, 0.8);
+  border-radius: 15px;
+}
+
+.edit-1 {
+  position: absolute;
+  width: 123px;
+  height: 39px;
+  left: 51px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.edit-2 {
+  position: absolute;
+  width: 123px;
+  height: 39px;
+  left: 143px;
+}
+
+.handle {
+  position: absolute;
+  width: 161px;
+  height: 39px;
+  left: 180px;
+  top: 423px;
+  background: rgba(255, 129, 41, 0.8);
+  border-radius: 15px;
+}
+
+.handle-1 {
+  position: absolute;
+  width: 140px;
+  height: 39px;
+  left: 184px;
+  top: 433px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.handle-2 {
+  position: absolute;
+  width: 123px;
+  height: 39px;
+  left: 320px;
+  top: 434px;
 }

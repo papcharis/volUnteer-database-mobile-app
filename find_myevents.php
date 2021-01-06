@@ -3,7 +3,7 @@
     function find_myevents(mysqli $conn, $mode) {
         session_start();
         if (!isset($_SESSION['loggedin'])) {
-            header('Location: index.html');
+            header('Location: login.html');
             exit;
           }
 
