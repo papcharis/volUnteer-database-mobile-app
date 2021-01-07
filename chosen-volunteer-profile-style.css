@@ -94,23 +94,25 @@ mark {
   width: 200px;
   position: absolute;
   left: calc(50% - 100px);
-  top: 360px;
+  top: 384px;
 }
 
 .full-name {
   position: absolute;
-  width: 284px;
-  height: 38px;
-  left: 50%;
-  top: 344px;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  width: 224px;
+  height: 55px;
+  left: 79px;
+  top: 326px;
+
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
+  display: flex;
+  align-items: flex-end;
   text-align: center;
+  justify-content: center;
   color: #000000;
 }
 
