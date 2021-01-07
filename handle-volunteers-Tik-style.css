@@ -1,13 +1,13 @@
 * {
     box-sizing: border-box;
   }
-  
+
   body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
   }
-  
+
   .logo-image {
     position: absolute;
     width: 70px;
@@ -15,7 +15,7 @@
     left: 13px;
     top: 17px;
   }
-  
+
   .logo a {
     font-family: Baloo;
     font-style: normal;
@@ -31,12 +31,12 @@
     left: 80px;
     top: 39px;
   }
-  
+
   mark {
     color: #6B9C9C;
     background: none;
   }
-  
+
   .myevents {
     position: absolute;
     width: 33px;
@@ -59,7 +59,7 @@
     text-align: center;
     color: #000000;
   }
-  
+
   .addevent-header {
     position: absolute;
     width: 200px;
@@ -74,7 +74,7 @@
     text-align: center;
     color: #000000;
   }
-  
+
   .rectangle-prof {
     position: absolute;
     width: 321px;
@@ -96,20 +96,20 @@
 
   .Name{
     position: absolute;
-    width: 300px;
+    width: 200px;
     height: 20px;
     left: 112px;
-  
+
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     text-align: left;
-  
+
     color: #000000;
   }
-  
+
   .Age {
     position: absolute;
     left: 112px;
@@ -119,7 +119,7 @@
     font-size: 13px;
     line-height: 16px;
     width: 300;
-  
+
     color: #544A4A;
   }
 
@@ -132,7 +132,7 @@
     font-size: 13px;
     line-height: 16px;
     width: 205px;
-  
+
     color: #544A4A;
   }
 
@@ -143,7 +143,7 @@
     left: calc(50% - 160px);
     top: 197px;
   }
-  
+
   .rectangle {
     position: absolute;
     width: 330px;
@@ -153,11 +153,11 @@
     background: rgba(255, 129, 41, 0.46);
     border-radius: 15px;
   }
-  
+
   .Role_Title {
     background-color: #ffffff;
   }
-  
+
   .Role_Title label {
     position: absolute;
     width: 150px;
@@ -172,7 +172,7 @@
     letter-spacing: -0.02em;
     color: #000000;
   }
-  
+
   .Role_Title input[type="text"] {
     position: absolute;
     width: 296px;
@@ -191,11 +191,11 @@
     border: none;
     padding-left: 10px;
   }
-  
+
   .Role_Description {
     background-color: #ffffff;
   }
-  
+
   .Role_Description label {
     position: absolute;
     width: 150px;
@@ -210,7 +210,7 @@
     letter-spacing: -0.02em;
     color: #000000;
   }
-  
+
   .Role_Description input[type="text"] {
     position: absolute;
     width: 296px;
@@ -232,7 +232,7 @@
   .HoursPerDay {
     background-color: #ffffff;
   }
-  
+
   .HoursPerDay label {
     position: absolute;
     width: 150px;
@@ -247,7 +247,7 @@
     letter-spacing: -0.02em;
     color: #000000;
   }
-  
+
   .HoursPerDay input[type="text"] {
     position: absolute;
     width: 296px;
@@ -266,11 +266,11 @@
     border: none;
     padding-left: 10px;
   }
-  
+
   .Days {
     background-color: #ffffff;
   }
-  
+
   .Days label {
     position: absolute;
     width: 150px;
@@ -285,7 +285,7 @@
     letter-spacing: -0.02em;
     color: #000000;
   }
-  
+
   .Days input[type="text"] {
     position: absolute;
     width: 296px;
@@ -304,11 +304,11 @@
     border: none;
     padding-left: 10px;
   }
-  
+
   .numofvol {
     background-color: #ffffff;
   }
-  
+
   .numofvol label {
     position: absolute;
     width: 200px;
@@ -323,9 +323,9 @@
     letter-spacing: -0.02em;
     color: #000000;
   }
-  
-  
-  
+
+
+
   input[type="submit"] {
     position: absolute;
     width: 137px;
@@ -345,4 +345,3 @@
     border: none;
     padding-left: 10px;
   }
-  

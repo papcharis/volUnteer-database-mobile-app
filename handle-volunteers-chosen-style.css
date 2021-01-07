@@ -144,13 +144,13 @@ mark {
   height: 88px;
   left: calc(50% - 160px);
   top: 279px;
-  background: rgba(255, 129, 41, 0.46);
+  background: #D9B8CB;
   border-radius: 15px;
 }
 
 .Name{
   position: absolute;
-  width: 300px;
+  width: 200px;
   height: 20px;
   left: 112px;
 

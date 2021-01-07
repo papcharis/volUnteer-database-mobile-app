@@ -75,7 +75,7 @@
         $RecPos = 168;
         $ImPos = 257;
         $NamePos = 180;
-        $AgePos = 195;
+        $AgePos = 199;
         $LetterPos = 220;
 
         echo '<div class="rectangle-prof" style="top: '.$RecPos.'px"></div>';
