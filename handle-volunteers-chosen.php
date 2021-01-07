@@ -88,6 +88,7 @@
       $NamePos = 276;
       $AgePos = 298;
       $RolePos = 321;
+      $ViewPos = 320;
 
 
 
@@ -122,6 +123,13 @@
         echo '<div class="Age" style="top:'.$AgePos.'px">Age : '.$age.' </div>';
         echo '<div class="Role" style="top:'.$RolePos.'px">Role : '.$row['Role_Title'].' </div>';
 
+        echo '<a href="chosen-volunteer-profile.php?username='.urldecode($curr_username).'">
+          <div class="viewprofile" style="top:'.$ViewPos.'px"></div>
+          <div class="viewprofile-1" style="top:'.$ViewPos.'px">
+            view profile
+          </div>
+        </a>';
+
 
 
         $RecPos = $RecPos + 120;
@@ -131,6 +139,7 @@
         $NamePos = $NamePos+120;
         $AgePos = $AgePos +120;
         $RolePos = $RolePos + 120;
+        $ViewPos = $ViewPos + 120;
       }
 
 

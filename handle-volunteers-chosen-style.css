@@ -191,3 +191,27 @@ mark {
 
   color: #544A4A;
 }
+
+.viewprofile {
+  position: absolute;
+  width: 87px;
+  height: 18px;
+  left: 253px;
+  top: 496px;
+  background: rgba(137, 32, 93, 0.8);
+  border-radius: 15px;
+}
+
+.viewprofile-1 {
+  position: absolute;
+  width: 76px;
+  height: 22px;
+  left: 262px;
+  top: 497.5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}

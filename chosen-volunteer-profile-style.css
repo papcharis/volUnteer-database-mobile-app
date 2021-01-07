@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo-image {
+  position: absolute;
+  width: 70px;
+  height: 72.42px;
+  left: 13px;
+  top: 17px;
+}
+
+.logo a {
+  font-family: Baloo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  text-decoration: none;
+  position: absolute;
+  width: 125px;
+  height: 33px;
+  left: 80px;
+  top: 39px;
+}
+
+mark {
+  color: #6B9C9C;
+  background: none;
+}
+
+.myprofile {
+  position: absolute;
+  width: 33px;
+  height: 33.15px;
+  left: 319px;
+  top: 41px;
+}
+
+.rectangle {
+  position: absolute;
+  width: 321px;
+  height: 630px;
+  left: calc(50% - 160px);
+  top: 139px;
+  background: #C1D5D5;
+  border-radius: 15px;
+}
+
+.edit {
+  position: absolute;
+  width: 61px;
+  height: 29px;
+  left: 279px;
+  top: 148px;
+  background: #6B9C9C;
+  border-radius: 15px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.edit-1 {
+  position: absolute;
+  width: 43px;
+  height: 20px;
+  left: 287px;
+  top: 152px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.profile-pic {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 110px;
+  top: 153px;
+}
+
+.line {
+  border-top: 2px solid #A49E9E;
+  width: 200px;
+  position: absolute;
+  left: calc(50% - 100px);
+  top: 360px;
+}
+
+.full-name {
+  position: absolute;
+  width: 284px;
+  height: 38px;
+  left: 50%;
+  top: 344px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+
+.profile-icon-1 {
+  position: absolute;
+  width: 20px;
+  height: 23.08px;
+  left: 60px;
+  top: 397px;
+}
+
+.profile-icon-2 {
+  position: absolute;
+  width: 20px;
+  height: 8.23px;
+  left: 61px;
+  top: 444.26px;
+}
+
+.profile-icon-3 {
+  position: absolute;
+  width: 30.56px;
+  height: 37.84px;
+  left: 57px;
+  top: 482px;
+}
+
+.contact {
+  position: absolute;
+  width: 114px;
+  height: 22px;
+  left: 130px;
+  top: 579px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #544A4A;
+}
+
+.line-2 {
+  border-top: 2px solid #A49E9E;
+  width: 200px;
+  position: absolute;
+  left: calc(50% - 100px);
+  top: 613px;
+}
+
+.username-text {
+  position: absolute;
+  width: 78px;
+  height: 18px;
+  left: 115px;
+  top: 398px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #544A4A;
+}
+
+.age-text {
+  position: absolute;
+  width: 78px;
+  height: 18px;
+  left: 115.11px;
+  top: 442.5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #544A4A;
+}
+
+.shortBio-text {
+  position: absolute;
+  width: 226px;
+  height: 46px;
+  left: 113px;
+  top: 487px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #544A4A;
+}
+
+.phone-text {
+  position: absolute;
+  width: 93px;
+  height: 20px;
+  left: 117px;
+  top: 630px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  color: #544A4A;
+}
+
+.email-text {
+  position: absolute;
+  width: 219px;
+  height: 25px;
+  left: 117px;
+  top: 683px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #544A4A;
+}
+
+.profile-icon-4 {
+  position: absolute;
+  width: 30px;
+  height: 28.82px;
+  left: 62px;
+  top: 629px;
+}
+
+.profile-icon-5 {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  left: 60px;
+  top: 684px;
+}
