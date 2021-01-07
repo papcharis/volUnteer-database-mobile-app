@@ -111,10 +111,10 @@
                         '.$row['Activity_ID'].'
                         </div>';
 
-                        echo '<a href="">
+                        echo '<a href="add-staff.php?ActID='.urldecode($row['Activity_ID']).'">
                             <div class="edit" style=" top: '.$BtnsTextsPos.'px"></div>
                             <div class="edit-1" style= " top: '.$BtnsPos.'px">
-                            Edit Event
+                            Add Staff
                             </div>
                             <div class="edit-2" style= " top: '.$BtnsPos.'px" >
                                 <img src="./images/arrow-small.svg" alt="" />

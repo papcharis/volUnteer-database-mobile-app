@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .logo-image {
+    position: absolute;
+    width: 70px;
+    height: 72.42px;
+    left: 13px;
+    top: 17px;
+  }
+
+  .logo a {
+    font-family: Baloo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    text-decoration: none;
+    position: absolute;
+    width: 125px;
+    height: 33px;
+    left: 80px;
+    top: 39px;
+  }
+
+  mark {
+    color: #6B9C9C;
+    background: none;
+  }
+
+  .myevents {
+    position: absolute;
+    width: 33px;
+    height: 33.15px;
+    left: 319px;
+    top: 41px;
+  }
+
+  .myevents-header {
+    position: absolute;
+    width: 350px;
+    height: 38px;
+    left: 5px;
+    top: 128px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .addevent-header {
+    position: absolute;
+    width: 200px;
+    height: 38px;
+    left: 5px;
+    top: 128px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .rectangle-prof {
+    position: absolute;
+    width: 321px;
+    height: 125px;
+    left: calc(50% - 160px);
+    top: 279px;
+    background: rgba(255, 129, 41, 0.46);
+    border-radius: 15px;
+  }
+
+  .image{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: 115px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+
+  .rectangle {
+    position: absolute;
+    width: 335px;
+    height: 349px;
+    left: 22px;
+    top: 158px;
+    background: rgba(255, 129, 41, 0.46);
+    border-radius: 15px;
+  }
+
+  .Name {
+    background-color: #ffffff;
+  }
+
+  .Name label {
+    position: absolute;
+    width: 150px;
+    height: 18px;
+    left: 47px;
+    top: 189px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+
+  .Name input[type="text"] {
+    position: absolute;
+    width: 296px;
+    height: 32px;
+    left: 39px;
+    top: 216px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+  }
+
+  .Age {
+    background-color: #ffffff;
+  }
+
+  .Age label {
+    position: absolute;
+    width: 150px;
+    height: 18px;
+    left: 47px;
+    top: 276px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+
+  .Age input[type="text"] {
+    position: absolute;
+    width: 296px;
+    height: 32px;
+    left: 39px;
+    top: 304px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+  }
+
+  .Title {
+    background-color: #ffffff;
+  }
+
+  .Title label {
+    position: absolute;
+    width: 150px;
+    height: 18px;
+    left: 47px;
+    top: 369px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+
+  .Title input[type="text"] {
+    position: absolute;
+    width: 296px;
+    height: 32px;
+    left: 39px;
+    top: 396px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+  }
+
+  .myevents-header {
+    position: absolute;
+    width: 350px;
+    height: 38px;
+    left: 5px;
+    top: 123px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+  }
+
+
+  input[type="submit"] {
+    position: absolute;
+    width: 154px;
+    height: 31px;
+    top: 479px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+    background: #FF8129;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+  }
