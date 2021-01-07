@@ -276,11 +276,11 @@
 
         $RecPos = 277;
         $ActNamePos = 284;
-        $DurationPos= 310;
+        $DurationPos= 314;
         $LocPos = 340;
 
         $text1 = 284;
-        $text2 = 310;
+        $text2 = 314;
         $text3 = 332;
         $text4 = 340;
 
