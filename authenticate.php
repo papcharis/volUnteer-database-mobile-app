@@ -14,7 +14,7 @@ session_start();
 
 // Try and connect using the info above.
 include 'db_connection.php';
-$con = open_con();
+$conn = open_con();
 
 // Now we check if the data from the login form was submitted, isset() will check if the data exists.
 if ( !isset($_POST['username'], $_POST['password']) ) {
@@ -23,7 +23,7 @@ if ( !isset($_POST['username'], $_POST['password']) ) {
 }
 
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-if ($stmt = $con->prepare('SELECT username,password FROM accountsV WHERE username = ?')) {
+if ($stmt = $conn->prepare('SELECT username,password FROM accountsv WHERE username = ?')) {
 	// Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
 	$stmt->bind_param('s', $_POST['username']);
 	$stmt->execute();
@@ -101,7 +101,7 @@ if ($stmt = $con->prepare('SELECT username,password FROM accountsV WHERE usernam
   	}
   } else {
   	// Incorrect username
-		if ($stmt2 = $con->prepare('SELECT organizer_ID,username,password FROM accountsO WHERE username = ?')) {
+		if ($stmt2 = $conn->prepare('SELECT organizer_ID,username,password FROM accountso WHERE username = ?')) {
 			// Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
 			$stmt2->bind_param('s', $_POST['username']);
 			$stmt2->execute();
@@ -240,5 +240,5 @@ if ($stmt = $con->prepare('SELECT username,password FROM accountsV WHERE usernam
 	$stmt->close();
 }
 
-close_con($con);
+close_con($conn);
 ?>

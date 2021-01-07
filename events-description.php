@@ -19,7 +19,8 @@
   include 'db_connection.php';
   $conn = open_con();
 
-  $sql = "SELECT ActName,voluntary_activity.City,voluntary_activity.Street,voluntary_activity.ZipCode,VolunteersNeeded,Start_Date,End_Date,Name FROM voluntary_activity JOIN Organizer_Profile ON Organizer_Profile.organizer_ID=voluntary_activity.organizer_ID
+  $sql = "SELECT ActName,voluntary_activity.City,voluntary_activity.Street,voluntary_activity.ZipCode,VolunteersNeeded,Start_Date,End_Date,Name
+          FROM voluntary_activity JOIN organizer_profile ON voluntary_activity.Organizer_ID = organizer_profile.organizer_ID
           WHERE ActName = '$va'" ;
   $result = $conn->query($sql);
 
