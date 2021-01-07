@@ -180,6 +180,14 @@ mark {
   top: 370px;
 }
 
+.id{
+  position: absolute;
+  width: 9px;
+  height: 14px;
+  left: calc(50% - 144px);
+  top: 370px;
+}
+
 
 .InfoText {
   font-family: Montserrat;
@@ -194,6 +202,21 @@ mark {
   left: 65px;
   top: 280px;
 }
+
+.IdText {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #544A4A;
+  position: absolute;
+  width: auto;
+  left: 65px;
+  top: 280px;
+}
+
 
 
 .edit {

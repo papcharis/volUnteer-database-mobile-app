@@ -91,7 +91,7 @@
         }
 
         echo '<div class="Name" style="top:'.$NamePos.'px"> '.$name.' </div>';
-        echo '<div class="Age" style="top:'.$AgePos.'px">Age = '.$age.' </div>';
+        echo '<div class="Age" style="top:'.$AgePos.'px">Age : '.$age.' </div>';
         echo '<div class="Letter" style="top:'.$LetterPos.'px">'.$motivationalLetter.' </div>';
     ?>
 

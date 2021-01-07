@@ -39,15 +39,17 @@
         if ($result->num_rows > 0) {
             $RecPos = 270;
             $ActNamePos = 280;
-            $DurationPos= 310;
-            $VolNeededPos = 340;
-            $LocPos = 370;
+            $DurationPos= 305;
+            $VolNeededPos = 335;
+            $LocPos = 365;
+            $IdPos = 391;
             $BtnsPos = 425;
+            $IdText = 390.25;
             $BtnsTextsPos = 415;
 
-            $text2 = 310;
-            $text3 = 340;
-            $text4 = 370;
+            $text2 = 305;
+            $text3 = 335;
+            $text4 = 365;
 
             # find upcoming events
             if($mode == 'upcoming') {
@@ -75,6 +77,11 @@
                         ">
                             <img src="./images/location-small.svg" alt="" />
                         </div>';
+                        echo '<div class="id" style = "
+                        top: '.$IdPos.'px;
+                        ">
+                            <img src="./images/id-icon-small.svg" alt="" />
+                        </div>';
 
                         $actname = $row['ActName'];
                         $actname = strlen($actname) > 30 ? substr($actname,0,30)."..." : $actname;
@@ -96,7 +103,12 @@
                         echo '<div class="InfoText" style = "
                         top: '.$LocPos.'px;
                         ">
-                        '.$row['Street'].', '.$row['ZipCode'].'
+                        '.$row['Street'].', '.$row['ZipCode']. ', ' .$row['City'].'
+                        </div>';
+                        echo '<div class="IdText" style = "
+                        top: '.$IdText.'px;
+                        ">
+                        '.$row['Activity_ID'].'
                         </div>';
 
                         echo '<a href="">
@@ -123,11 +135,13 @@
                         $DurationPos= $DurationPos + 215;
                         $VolNeededPos = $VolNeededPos + 215;
                         $LocPos = $LocPos + 215;
+                        $IdPos = $IdPos + 215;
                         $BtnsPos = $BtnsPos + 215;
                         $BtnsTextsPos = $BtnsTextsPos +215;
                         $text2 = $text2 + 215;
                         $text3 = $text3 + 215;
                         $text4 = $text4 + 215;
+                        $IdText = $IdText + 215;
                     }
                 }
             }
