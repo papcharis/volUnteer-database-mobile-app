@@ -47,6 +47,7 @@
   $result = $conn->query($sql);
 
   $bg = array('#FFC59D','#D9B8CB','#C1D5D5','#FFC59D','#D9B8CB','#C1D5D5','#FFC59D','#D9B8CB','#C1D5D5');
+  $sg = array('#FF842E','#993E73','#7CA7A7','#FF842E','#993E73','#7CA7A7','#FF842E','#993E73','#7CA7A7');
   $i = 0;
 
   if ($result->num_rows > 0) {
@@ -60,6 +61,9 @@
     $text2 = 346;
     $text3 = 368;
     $text4 = 389;
+
+    $selectedLg = 385;
+    $selectedNg = 391;
 
 
     while($row = $result->fetch_assoc()) {
@@ -117,10 +121,52 @@
       '.$row['City'].'
       </div>';
 
+      echo '<a href="./events-description.php?ActName='.urldecode($row["ActName"]).'">';
+      echo  '<div class="more" style = "
+      position: absolute;
+      width: 72px;
+      height: 26px;
+      left: 263px;
+      top: '.$selectedLg.'px;
+      background: '.$sg[$i].';
+      border-radius: 15px;"></div>';
+      echo  '</a>';
+      echo '<a href="./events-description.php?ActName='.urldecode($row["ActName"]).'">';
+      echo  '<div class="more-1" style="
+      position: absolute;
+      width: 72px;
+      height: 29px;
+      left: 259px;
+      top: '.$selectedLg.'px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+      text-decoration: none;
+      color: #000000;">';
+      echo   ' More';
+      echo '&nbsp;';
+      echo  '</div>';
+      echo  '</a>';
+      echo '<a href="./events-description.php?ActName='.urldecode($row["ActName"]).'">';
+      echo '<div class="more-1" style="
+      position: absolute;
+      width: 72px;
+      height: 29px;
+      left: 288px;
+      top: '.$selectedNg.'px;">';
+      echo    '<img src="./images/arrow-small.svg" alt="" />';
+      echo  '</div>';
+      echo  '</a>';
+
       $RecPos = $RecPos +120;
       $DurationPos= $DurationPos + 120;
       $OrgPos = $OrgPos + 120;
       $LocPos = $LocPos + 120;
+      $selectedLg = $selectedLg + 120;
+      $selectedNg = $selectedNg + 120;
 
       $text1 = $text1 + 120;
       $text2 = $text2 + 120;
