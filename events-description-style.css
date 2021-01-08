@@ -54,11 +54,13 @@ mark {
 }
 
 .line {
-  border-top: 2px solid #A49E9E;
-  width: 250px;
   position: absolute;
-  left: calc(50% - 155px);
-  top: 435px;
+  width: 200px;
+  height: 0px;
+  left: 103px;
+  top: 427.31px;
+
+  border: 1px solid #A49E9E;
 }
 
 .apply {

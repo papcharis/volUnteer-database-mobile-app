@@ -29,18 +29,22 @@
   // output data of each row
     while($row = $result->fetch_assoc()) {
       echo '<div class="title" style = "position: absolute;
-              width: auto;
-              height: 18px;
-              left: calc(50% - 155px);
-              top: 398px;
-              font-family: Montserrat;
-              font-style: normal;
-              font-weight: 600;
-              font-size: 20px;
-              text-transform: uppercase;
-              line-height: 29px;
-              text-align: center;
-              color: #000000;">';
+            width: 363px;
+            height: 58px;
+            left: 13px;
+            top: 365px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            display: flex;
+            align-items: flex-end;
+            text-align: center;
+            justify-content: center;
+
+            color: #000000;">';
       echo  $row["ActName"];
       echo '</div>';
       echo '<div class="org" style = "position: absolute;
