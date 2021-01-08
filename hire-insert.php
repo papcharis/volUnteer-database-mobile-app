@@ -11,7 +11,7 @@
     $vol_username = $_GET['VolUserName'];
 
     if($stmt2 = $conn->prepare('INSERT INTO hires (Role_Title,Role_Description, hoursPerDay, Days ,Volunteer_Username, Activity_ID) VALUES (?,?,?,?, ?, ?)')){
-        $stmt2->bind_param('ssssss',  $Role_Title, $Role_Description,  $hoursPerDay, $Days, $vol_username, $act_id);
+        $stmt2->bind_param('ssisss',  $Role_Title, $Role_Description,  $hoursPerDay, $Days, $vol_username, $act_id);
         $stmt2->execute();
     }
     else{
