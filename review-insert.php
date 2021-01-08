@@ -16,7 +16,7 @@ if (!isset($randomID, $_POST['ReviewTextBox'], $_SESSION['username'], $va)) {
 	exit('Data not received, try again');
 }
 if($stmt2 = $conn->prepare('INSERT INTO reviews (Review_ID, Rating, Text, Volunteer_Username, Organization_ID) VALUES (?, ?, ?, ?, ?)')){
-  $stmt2->bind_param('sssss', $randomID, $_POST['Rating'], $_POST['ReviewTextBox'], $_SESSION['username'], $record[0]);
+  $stmt2->bind_param('sdsss', $randomID, $_POST['Rating'], $_POST['ReviewTextBox'], $_SESSION['username'], $record[0]);
   $stmt2->execute();
 }
 else{

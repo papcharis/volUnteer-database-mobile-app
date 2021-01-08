@@ -102,7 +102,7 @@ if ($stmt = $conn->prepare('SELECT username FROM accountsv WHERE username = ?'))
         $stmt->execute();
 
       if($stmt2 = $conn->prepare('INSERT INTO volunteer_profile (First_Name,Last_Name,username,Email,City,Street,Zipcode,Age,Sex,Phone,ShortBio) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)')){
-        $stmt2->bind_param('sssssssssss', $_POST['first_name'], $_POST['last_name'], $_POST['username'], $_POST['email']
+        $stmt2->bind_param('sssssssisss', $_POST['first_name'], $_POST['last_name'], $_POST['username'], $_POST['email']
         , $_POST['city'], $_POST['address'], $_POST['zipcode'], $_POST['age'], $_POST['sex'], $_POST['phone'], $_POST['bio']);
         $stmt2->execute();
       }
