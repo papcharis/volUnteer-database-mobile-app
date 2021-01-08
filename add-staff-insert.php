@@ -12,7 +12,7 @@ if (!isset($actID, $_POST['Name'], $_POST['Age'], $_POST['Title'], $randomID)) {
 	exit('Data not received, try again');
 }
 if($stmt2 = $conn->prepare('INSERT INTO staff (Staff_ID, Title, Age, Name, Activity_ID) VALUES (?, ?, ?, ?, ?)')){
-  $stmt2->bind_param('sssss', $randomID, $_POST['Title'], $_POST['Age'], $_POST['Name'], $actID);
+  $stmt2->bind_param('ssiss', $randomID, $_POST['Title'], $_POST['Age'], $_POST['Name'], $actID);
   $stmt2->execute();
 }
 else{
