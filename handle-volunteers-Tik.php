@@ -56,9 +56,20 @@
         }
 
         $act_name = strlen($act_name) > 23 ? substr($act_name,0,23)."..." : $act_name;
-        echo '<div class="myevents-header">
-          '.$act_name.'
-          </div>';
+        echo '<div class="myevents-header" style="
+                  position: absolute;
+                  width: 360px;
+                  height: 18px;
+                  left: 9px;
+                  top: 128px;
+                  font-family: Montserrat;
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 24px;
+                  line-height: 37px;
+                  color: #000000;">
+              '.$act_name.'
+              </div>';
 
         $sql2 = "SELECT Age, Sex , First_Name, Last_Name FROM volunteer_profile WHERE username='$vol_username'";
         $sql2_result = $conn->query($sql2);
@@ -89,7 +100,7 @@
           <img src=./images/profile-small-2.png alt="" />
           </div>';
         }
-
+        $name = strlen($name) > 28 ? substr($name,0,28)."..." : $name;
         echo '<div class="Name" style="top:'.$NamePos.'px"> '.$name.' </div>';
         echo '<div class="Age" style="top:'.$AgePos.'px">Age : '.$age.' </div>';
         echo '<div class="Letter" style="top:'.$LetterPos.'px">'.$motivationalLetter.' </div>';

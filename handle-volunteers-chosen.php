@@ -50,16 +50,15 @@
     $act_name = strlen($act_name) > 23 ? substr($act_name,0,23)."..." : $act_name;
     echo '<div class="myevents-header" style="
               position: absolute;
-              width: 233px;
+              width: 360px;
               height: 18px;
               left: 9px;
               top: 128px;
               font-family: Montserrat;
               font-style: normal;
               font-weight: 600;
-              font-size: 30px;
+              font-size: 24px;
               line-height: 37px;
-              text-align: center;
               color: #000000;">
           '.$act_name.'
           </div>';
@@ -86,9 +85,9 @@
       $TikPos= 295;
       $XPos = 295;
       $NamePos = 276;
-      $AgePos = 298;
-      $RolePos = 321;
-      $ViewPos = 320;
+      $AgePos = 325;
+      $RolePos = 308;
+      $ViewPos = 323;
 
 
 
