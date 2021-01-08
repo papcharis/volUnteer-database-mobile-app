@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="SHORTCUT ICON" HREF="./images/favicon.png">
-  
+
 </head>
 
 <body>
@@ -74,12 +74,12 @@
 
 
 
-      $RecPos = $RecPos +140;
-      $LinePos = $LinePos + 140;
-      $NamePos = $NamePos + 140;
-      $EventPos = $EventPos + 140;
-      $TitlePos = $TitlePos + 140;
-      $IdPos = $IdPos + 140;
+      $RecPos = $RecPos +115;
+      $LinePos = $LinePos + 115;
+      $NamePos = $NamePos + 115;
+      $EventPos = $EventPos + 115;
+      $TitlePos = $TitlePos + 115;
+      $IdPos = $IdPos + 115;
     }
   }
   else{
