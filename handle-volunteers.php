@@ -131,7 +131,7 @@
            echo '<div class="Xi" style =
            "top: '.$XPos.'px;
             left: 300px;  ">
-            <a <a href="handle-volunteers-Xi.php?ActID='.urldecode($act_id).'">
+            <a <a href="handle-volunteers-Xi.php?ActID='.urldecode($act_id).'&VolUserName='.$curr_username.'">
               <img src="./images/xi.svg" alt="" />
             </a>
            </div>';
