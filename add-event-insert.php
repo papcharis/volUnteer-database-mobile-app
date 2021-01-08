@@ -30,7 +30,7 @@
   	exit('Data not received, try again');
   }
   if($stmt2 = $conn->prepare('INSERT INTO voluntary_activity (Activity_ID, ActName, City,Street,ZipCode,VolunteersNeeded,Start_Date,End_Date,Organizer_ID) VALUES (?, ?, ?, ?,?, ?, ?, ? , ?)')){
-    $stmt2->bind_param('sssssssss', $randomID, $_POST['activity_name'],$_POST['city'],$_POST['address'],$_POST['zipcode'], $_POST['numofvol'], $_POST['startdate'],$_POST['enddate'], $orgID);
+    $stmt2->bind_param('sssssisss', $randomID, $_POST['activity_name'],$_POST['city'],$_POST['address'],$_POST['zipcode'], $_POST['numofvol'], $_POST['startdate'],$_POST['enddate'], $orgID);
     $stmt2->execute();
   }
   else{

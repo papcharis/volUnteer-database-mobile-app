@@ -52,11 +52,11 @@
     </div>
     <div class="startdate">
       <label for="startdate">Start Date:</label><br>
-      <input type="date" name="startdate" id="startdate">
+      <input type="date" name="startdate" id="startdate" required>
     </div>
     <div class="enddate">
       <label for="enddate">End Date:</label><br>
-      <input type="date" name="enddate" id="enddate">
+      <input type="date" name="enddate" id="enddate" required>
     </div>
     <input type="submit" value="ADD EVENT">
   </form>
