@@ -46,9 +46,20 @@
         }
 
         $act_name = strlen($act_name) > 23 ? substr($act_name,0,23)."..." : $act_name;
-        echo '<div class="myevents-header">
-          '.$act_name.'
-          </div>';
+        echo '<div class="myevents-header" style="
+                  position: absolute;
+                  width: 360px;
+                  height: 18px;
+                  left: 9px;
+                  top: 128px;
+                  font-family: Montserrat;
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 24px;
+                  line-height: 37px;
+                  color: #000000;">
+              '.$act_name.'
+              </div>';
 
         ?>
 
