@@ -168,7 +168,7 @@
                     $record = $act_result->fetch_row();
 
                     # event_start_date > current date
-                    if($record[2] > date('Y-m-d')) {
+                    if($record[3] >= date('Y-m-d')) {
 
                         echo '<div class="rectangle"  style = "
                         position: absolute;
