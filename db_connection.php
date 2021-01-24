@@ -1,7 +1,7 @@
 <?php
 
 function open_con(){
-  $conn = new mysqli("localhost", "admin", "hYvyrNsy3d", "mydb");
+  $conn = new mysqli("localhost", "LOCALHOSTUSERNAME", "LOCALHOSTPASSWORD", "mydb");
   // Check connection
   if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
