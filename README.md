@@ -1,7 +1,7 @@
 # volUnteer-database-mobile-app
 Mobile app for handling volunteers and voluntary activities. Databases course (AUTH)
 
-You can see a walkthrough-preview of the app down below:
+You can see a walkthrough-preview of the app down below(The link of the web-app is inactive temporarily):
 
 ![](./images/walkthrough-images/1.jpg)
 ![](./images/walkthrough-images/2.jpg)
